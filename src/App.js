@@ -13,7 +13,7 @@ function App() {
       {/* uncommment your respective one to work on */}
 
       {/* <HomePage></HomePage> Ranjan */}
-      {/* <Welcome></Welcome> Greg */}
+      <Welcome></Welcome> {/* Greg */}
       <GalleryApp></GalleryApp>
       {/* <Committee></Committee> Brandon */}
     </div>

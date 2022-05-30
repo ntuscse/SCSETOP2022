@@ -2,7 +2,7 @@ import React from 'react'
 import './welcome.css';
 import Waves from './Waves';
 import Head from './Head';
-import Body from './BodyPara'
+import BodyPara from './BodyPara'
 import welcomeText from "./welcome.json";
 
 const Welcome = () => {
@@ -18,7 +18,7 @@ const Welcome = () => {
       <div class="bodyText">
         {
           bodyTexts.map(body=>{
-            return <Body
+            return <BodyPara
               text={body}
             />
           })
