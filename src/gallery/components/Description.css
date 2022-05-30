@@ -1,0 +1,25 @@
+.photoGalTitle, .photoGalDesc{
+    text-align: center;
+    position: relative;
+}
+
+.photoGalTitle{
+    font-size: 4em;
+    padding-top: 3rem;
+}
+
+.photoGalDesc{
+    font-size: 2em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 900px){
+    .photoGalTitle{
+        font-size: 2.2em;
+    }
+    
+    .photoGalDesc{
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,26 @@
+.greySpade, .blackSpade{
+    cursor: pointer;
+}
+
+.greySpade{
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.blackSpade{
+    width: 2.8rem;
+    height: 3.5rem;
+}
+
+@media screen and (min-width: 900px){
+
+    .greySpade{
+        width: 4rem;
+        height: 5rem;
+    }
+
+    .blackSpade{
+        width: 5rem;
+        height: 6.5rem;
+    }
+}
