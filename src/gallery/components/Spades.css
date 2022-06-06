@@ -1,0 +1,21 @@
+.spades{
+    position: relative;
+    bottom: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeSpade, .nonActiveSpade{
+    padding: 0.1rem;
+    margin-right: -0.1rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 992px){
+    .activeSpade, .nonActiveSpade{
+        margin-right: 0.5rem;
+        border-radius: 50%;
+    }
+}

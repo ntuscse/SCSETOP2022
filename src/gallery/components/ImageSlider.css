@@ -1,0 +1,96 @@
+.slider {
+    position: relative;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line{
+    position: absolute;
+    width: 100%;
+  }
+
+  .firstLine{
+    position: absolute;
+    top: 4vw;
+    right: 0;
+  }
+
+  .secondLine{
+    position: absolute;
+    top: 32vw;
+    left: 0;
+  }
+  
+  .bigSquare{
+    position: absolute;
+    top: 3vw;
+    right: 25.5vw;
+  }
+  
+  .smallSquare{
+    position: absolute;
+    top: 34vw;
+    left: 25vw;
+  }
+  
+  .pics {
+    width: 45vw;
+    height: 32vw;
+    border-radius: 2rem;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    font-size: 3rem;
+    color: #C4C4C4;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    font-size: 3rem;
+    color: #C4C4C4;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  @media screen and (min-width: 992px){
+    .right-arrow, .left-arrow{
+      font-size: 6rem;
+    }
+
+    .right-arrow{
+      right: 15vw;
+    }
+
+    .left-arrow{
+      left: 15vw;
+    }
+
+    .pics {
+      width: 42vw;
+      height: 30vw;
+      border-radius: 2rem;
+    }
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  

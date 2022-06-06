@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HomePage from './homepage';
 import Welcome from './welcome';
-import Gallery from './gallery';
+import GalleryApp from './gallery/GalleryApp';
 import Committee from './committee';
 
 
@@ -13,8 +13,8 @@ function App() {
       {/* uncommment your respective one to work on */}
 
       {/* <HomePage></HomePage> Ranjan */}
-      {/* <Welcome></Welcome> Greg */}
-      {/* <Gallery></Gallery> Guo Yong */}
+      <Welcome></Welcome>
+      <GalleryApp></GalleryApp>
       {/* <Committee></Committee> Brandon */}
     </div>
   );
