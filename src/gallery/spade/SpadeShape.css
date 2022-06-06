@@ -8,11 +8,11 @@
 }
 
 .blackSpade{
-    width: 2.8rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3.7rem;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 992px){
 
     .greySpade{
         width: 4rem;
