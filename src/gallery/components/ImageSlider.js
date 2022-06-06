@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import Spades from './Spades';
-import Line from '../backgroundShapes/Line';
+import LineOne from '../backgroundShapes/LineOne';
+import LineTwo from '../backgroundShapes/LineTwo';
 import BigSquare from '../backgroundShapes/BigSquare';
 import SmallSquare from '../backgroundShapes/SmallSquare';
 
@@ -30,7 +31,8 @@ const ImageSlider = ({ slides }) => {
   return (
     <>
     <section className='slider'>
-      <div className='line'><Line /></div>
+      <div className='firstLine'><LineOne /></div>
+      <div className='secondLine'><LineTwo /></div>
       <div className='bigSquare'><BigSquare /></div>
       <div className='smallSquare'><SmallSquare /></div>
       <FaChevronCircleLeft className='left-arrow' onClick={prevSlide} />

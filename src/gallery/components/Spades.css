@@ -9,13 +9,12 @@
 
 .activeSpade, .nonActiveSpade{
     padding: 0.1rem;
-    margin-right: 0.5rem;
+    margin-right: -0.1rem;
     border-radius: 50%;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 992px){
     .activeSpade, .nonActiveSpade{
-        padding: 0.3rem;
         margin-right: 0.5rem;
         border-radius: 50%;
     }
