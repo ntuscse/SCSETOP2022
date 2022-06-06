@@ -1,0 +1,133 @@
+.committee-div {
+    background-color: #28282B;
+}
+
+.img-container {
+    position: relative;
+    max-width: 680px;
+}
+
+.card-container-wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+.card-container {
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-card-left {
+    align-self:flex-start;
+}
+
+.pic-card-right {
+    align-self:flex-end;
+}
+
+@media screen and (min-width: 992px) {
+    .gl-card-shifting {
+        z-index: 3;
+        margin-top: -100px !important;
+    }
+
+    .pnp-card-shifting {
+        margin-top: -100px !important;
+    }
+
+    .logistics-card-shifting {
+        margin-top: -100px !important;
+    }
+    
+    .tech-card-shifting {
+        margin-top: -100px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tech-card-shifting {
+        z-index: 2;
+        margin-top: -400px !important;
+    }
+}
+
+
+
+img {
+    width: 100%;
+}
+
+.text-block {
+    position: absolute;
+    /* bottom: -10px;
+    right: -10px;     */
+    background: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    border: solid white 4px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pic-card {
+    margin: 30px;
+    display:inline-block;
+}
+
+.pic-card-overlap-tl {
+    top: -20px;
+    left: -10px;
+}
+
+.pic-card-overlap-tr {
+    top: -20px;
+    right: -10px;
+}
+
+.pic-card-overlap-bl {
+    bottom: -20px;
+    left: -10px;
+}
+
+.pic-card-overlap-br {
+    bottom: -20px;
+    right: -10px;
+}
+
+.texts {
+    display: flex;
+    color: #778D87;
+    font-size: 72px;
+}
+
+.rotated {
+    color: #E8E8E8;
+}
+
+@media screen and (min-width: 900px){
+    .texts {
+        /* display: flex; */
+        justify-content: end;
+        /* color: #778D87; */
+        /* font-size: 72px; */
+        transform:translate(400px, 0px);
+    }
+    
+    .rotated {
+        transform-origin: top left;
+        transform: translate(30px, 100px) rotate(90deg);
+        /* color: #E8E8E8; */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .rotated {
+        margin-left: 30px;
+    }
+
+    .texts {
+        margin-bottom: -80px;
+    }
+}
+
