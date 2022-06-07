@@ -6,10 +6,18 @@ import './homepage.css';
 
 const HomePage = () => {
   return (
-    <div>
+    <div class="container" id="gradient">
+      <div class="navbar">
+        <a href="#register">Register</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#committee">Committee</a>
+      </div>
+      <div class="bg-div">
+        <div class="logo-div"><Logo></Logo></div>
         <FrontBg></FrontBg>
         <BackBg></BackBg>
-        <Logo></Logo>
+      </div>
     </div>
   )
 }
