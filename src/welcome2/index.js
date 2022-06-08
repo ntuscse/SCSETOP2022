@@ -6,11 +6,20 @@ import BodyPara from './BodyPara'
 import welcomeText from "./welcome.json";
 import Video from './Video';
 
+
 import { ReactComponent as C10S } from './cards/10S.svg';
+import Card from './Card';
+
+const seeds = Array.from({length: 100}, () => Math.random());
+const width = window.innerWidth;
 
 const Welcome = () => {
   const [offsetY, setOffSetY] = useState(0)
-  const handleScroll = () => setOffSetY(window.pageYOffset)
+
+  const handleScroll = () => {
+    var elDistanceToTop = window.pageYOffset + document.getElementById("asdf").getBoundingClientRect().top
+    setOffSetY(window.pageYOffset-elDistanceToTop)
+  }
   
   useEffect(()=>{
     window.addEventListener('scroll',handleScroll)
@@ -23,37 +32,65 @@ const Welcome = () => {
   const layer2 = 0.5;
   const layer3 = 0.8;
 
+
+  const [timeLapse, setTimeLapse] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setTimeLapse((oldCount) => oldCount + 1)
+  }, 50);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
+
+  let noCards = Math.min(Math.floor(10+width*0.04), 100);
+  //console.log(noCards)
+
   //========== END SET UP =========
 
   let headText = welcomeText.head;
   let bodyTexts = welcomeText.body;
 
   return (
-    <div class="allText" 
+    <div class="welcomeMain"
+      id="asdf"
       style={{display:"flex", flexDirection:"column", alignItems:"center", zIndex:-1}}>
-
-      <Head
-        style={{transform: `translateY(${offsetY * 0.3}px)`}}
-        text={headText}
-      />
       
+      <div class="allText">
+        <Head
+          style={{transform: `translateY(${offsetY * 0}px)`}}
+          text={headText}
+        />
+        
 
-      { 
-        bodyTexts.map(body=>{
-          return <BodyPara
-            style={{transform: `translateY(${offsetY * 0.3}px)`}}
-            text={body}
-          />
-        })
-      }
+        { 
+          bodyTexts.map(body=>{
+            return <BodyPara
+              style={{transform: `translateY(${offsetY * 0}px)`}}
+              text={body}
+            />
+          })
+        }
 
-      {/*<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/10S.svg"/>*/}
+        {/*<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/10S.svg"/>*/}
 
-      {/* <div class="vidPlayer" style={{backgroundColor:"blue", transform: `translateY(${offsetY * 0.3}px)`}}></div> */}
-
-      <C10S style={{transform:`rotate3d(1,1,1,${offsetY/5}deg)`}}/>
-
-      <div style={{height:"400px"}}></div>
+        {/* <div class="vidPlayer" style={{backgroundColor:"blue", transform: `translateY(${offsetY * 0.3}px)`}}></div> */}
+      </div>
+      
+      <div class="bgBorder">
+        <div class="cardBG">
+          {[...Array(noCards).keys()].map(i=>{
+            return <Card 
+              seed={seeds[i]} 
+              scrollOffset={offsetY}
+              timeLapse = {timeLapse}
+              width = {width}
+              />
+          })}
+        </div>
+      </div>
       
     </div>
   )
