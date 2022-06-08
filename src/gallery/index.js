@@ -1,20 +1,15 @@
-import React from 'react'
-import './gallery.css';
-import Spade from './BackBg';
-import Line from './Line';
-import SmallSquare from './SmallSquare';
-import BigSquare from './BigSquare';
+import './index.css';
+import ImageSlider from './components/ImageSlider';
+import Description from './components/Description';
+import { SliderData } from './components/SliderData';
 
-const Gallery = () => {
+const GalleryApp = () => {
   return (
-    <div>
-        index
-    <Spade></Spade>
-    <Line></Line>
-    <SmallSquare></SmallSquare>
-    <BigSquare></BigSquare>
+    <div className="Gallery">
+    <Description />
+    <ImageSlider slides={SliderData} />
     </div>
-  )
+  );
 }
 
-export default Gallery
+export default GalleryApp;
