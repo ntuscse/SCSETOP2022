@@ -43,7 +43,7 @@ const Welcome = () => {
   //let offsetY=0
   //let timeLapse=0
 
-  let noCards = Math.min(Math.floor(10+width*0.04), 100);
+  let noCards = Math.min(Math.floor(20+width*0.04), 100);
   //console.log(noCards)
 
   //========== END SET UP =========
