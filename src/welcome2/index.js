@@ -83,6 +83,7 @@ const Welcome = () => {
             url='https://www.youtube.com/watch?v=erEgovG9WBs'
             width='100%'
             height='100%'
+            controls
           />
         </div>
       
