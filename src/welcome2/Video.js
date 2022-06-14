@@ -1,5 +1,6 @@
 
 import React from "react";
+import ReactPlayer from "react-player";
 
 
 export default function Video(props) {
@@ -8,13 +9,17 @@ export default function Video(props) {
         style={props.style}>
       <iframe
         src="https://www.youtube.com/embed/dl-ECFvtwow"
-        width="853"
-        height="480"
+        width="560"
+        height="315"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="Embedded youtube"
       />
+
+      <ReactPlayer controls url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+
+
     </div>
   );
 }
