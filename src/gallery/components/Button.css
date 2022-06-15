@@ -1,0 +1,31 @@
+.vmButton{
+    position: relative;
+    border-color: #2B4BFF;
+    color: #E8E8E8;
+    background-color: #30595F;
+    box-shadow: 0 0 2rem 2rem #2B4BFF inset, 0 0 0 0 #2B4BFF;
+    transition: all 300ms ease-in-out;
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.vmButton:hover{
+    box-shadow: 0 0 0.5rem 0 #2B4BFF inset, 0 0 0.5rem 0.2rem #2B4BFF;
+}
+
+.buttonOne{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px){
+    .vmButton{
+        width: 15rem;
+        height: 3.7rem;
+        font-size: 2rem;
+    }
+}

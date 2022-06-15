@@ -1,51 +1,46 @@
 .slider {
     position: relative;
-    height: 45vw;
+    height: 55vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .line{
-    position: absolute;
-    width: 100%;
-  }
 
   .firstLine{
     position: absolute;
-    top: 4vw;
+    top: 2vw;
     right: 0;
   }
 
   .secondLine{
     position: absolute;
-    top: 32vw;
+    top: 42vw;
     left: 0;
   }
   
   .bigSquare{
     position: absolute;
-    top: 3vw;
-    right: 25.5vw;
+    top: 2vw;
+    right: 14vw;
   }
   
   .smallSquare{
     position: absolute;
-    top: 34vw;
-    left: 25vw;
+    top: 44vw;
+    left: 15vw;
   }
   
   .pics {
-    width: 45vw;
-    height: 32vw;
+    width: 60vw;
+    height: 42vw;
     border-radius: 2rem;
   }
   
   .right-arrow {
     position: absolute;
     top: 50%;
-    right: 10vw;
-    font-size: 3rem;
+    right: 4vw;
+    font-size: 2.5rem;
     color: #C4C4C4;
     z-index: 10;
     cursor: pointer;
@@ -55,8 +50,8 @@
   .left-arrow {
     position: absolute;
     top: 50%;
-    left: 10vw;
-    font-size: 3rem;
+    left: 4vw;
+    font-size: 2.5rem;
     color: #C4C4C4;
     z-index: 10;
     cursor: pointer;
@@ -64,6 +59,38 @@
   }
   
   @media screen and (min-width: 992px){
+    .slider{
+      height: 45vw;
+    }
+    
+    .firstLine{
+      position: absolute;
+      top: 4vw;
+      right: 0;
+    }
+  
+    .secondLine{
+      position: absolute;
+      top: 32vw;
+      left: 0;
+    }
+
+    .bigSquare{
+      top: 3vw;
+      right: 25vw;
+    }
+    
+    .smallSquare{
+      top: 34vw;
+      left: 25vw;
+    }
+
+    .pics {
+      width: 42vw;
+      height: 30vw;
+      border-radius: 2rem;
+    }
+
     .right-arrow, .left-arrow{
       font-size: 6rem;
     }
@@ -74,12 +101,6 @@
 
     .left-arrow{
       left: 15vw;
-    }
-
-    .pics {
-      width: 42vw;
-      height: 30vw;
-      border-radius: 2rem;
     }
   }
   

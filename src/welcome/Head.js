@@ -4,7 +4,7 @@ import React from "react";
 
 const Head = (props) => {
     return (
-        <div style={{minWidth:'300px', maxWidth:'600px'}}>
+        <div class="headText" style={{minWidth:'300px', maxWidth:'600px'}}>
             <h1>{props.text}</h1>
         </div>
     )

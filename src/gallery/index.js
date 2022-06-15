@@ -1,4 +1,4 @@
-import './GalleryApp.css';
+import './index.css';
 import ImageSlider from './components/ImageSlider';
 import Description from './components/Description';
 import { SliderData } from './components/SliderData';

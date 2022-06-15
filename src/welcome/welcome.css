@@ -1,9 +1,16 @@
 
 
-.headText{
-    margin: 10px 3% 10px 3%;
+.allText{
+    background-color: #28282B;
+    color: #E8E8E8;
 }
 
-.bodyText{
-    margin: 10px 3% 10px 3%;
+
+
+.headText{
+    margin: 50px 3% 50px 3%;
+}
+
+.bodyPara{
+    margin: 100px 3% 100px 3%;
 }
