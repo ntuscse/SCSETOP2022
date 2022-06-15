@@ -6,8 +6,10 @@ export default function PicCard({grpName, picSrc, picSide, style, overallStyle})
             <div className={picSide}>
                 <div class="img-container">
                 <img src={picSrc}></img>
-                <div class={"text-block " + style}>
-                    <h3>{grpName}</h3>
+                <div class="text-block-wrapper">
+                    <div class={"text-block " + style}>
+                        <h3>{grpName}</h3>
+                    </div>
                 </div>
                 </div>
             </div>

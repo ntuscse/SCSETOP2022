@@ -4,6 +4,8 @@
 
 .committee-div {
     background-color: #28282B;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container {
@@ -22,15 +24,76 @@
     flex-direction: column;
 }
 
+.texts {
+    display: flex;
+    color: #778D87;
+    font-size: 72px;
+    border-radius:1px;
+}
+
+.rotated {
+    color: #E8E8E8;
+}
+
+.rotated {
+    margin-left: 30px;
+}
+
+.texts {
+    margin-bottom: -80px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.text-block {
+    top: auto;
+    right: auto;
+    bottom: -45px;
+    left: auto;
+    justify-self: center;
+}
+
+.text-block-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.text-block {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    border: solid white 4px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .pic-card-left {
-    align-self:flex-start;
+    align-self: center;
 }
 
 .pic-card-right {
-    align-self:flex-end;
+    align-self: center;
+}
+
+img {
+    width: 100%;
+}
+
+.pic-card {
+    margin: 30px;
+    display:inline-block;
 }
 
 @media screen and (min-width: 992px) {
+    .pic-card-left {
+        align-self: flex-start !important;
+    }
+    
+    .pic-card-right {
+        align-self: flex-end !important;
+    }
+
     .gl-card-shifting {
         z-index: 3;
         margin-top: -100px !important;
@@ -47,6 +110,45 @@
     .tech-card-shifting {
         margin-top: -100px !important;
     }
+
+    .text-wrapper {
+        display: flex;
+        justify-content: end;
+        padding-right: 30px;
+    }
+
+    .text-block-wrapper {
+        display: inline;
+        justify-content: center;
+    }
+    
+    .rotated {
+        transform-origin: top left;
+        transform: translate(315px, 115px) rotate(90deg);
+        position: absolute;
+    }
+
+    .pic-card-overlap-tl {
+        top: -20px;
+        bottom: auto;
+        left: -10px;
+    }
+    
+    .pic-card-overlap-tr {
+        top: -20px;
+        bottom: auto;
+        right: -10px;
+    }
+    
+    .pic-card-overlap-bl {
+        bottom: -20px;
+        left: -10px;
+    }
+    
+    .pic-card-overlap-br {
+        bottom: -20px;
+        right: -10px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -55,83 +157,3 @@
         margin-top: -400px !important;
     }
 }
-
-
-
-img {
-    width: 100%;
-}
-
-.text-block {
-    position: absolute;
-    /* bottom: -10px;
-    right: -10px;     */
-    background: rgba(0, 0, 0, 0.5);
-    font-size: x-large;
-    border: solid white 4px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.pic-card {
-    margin: 30px;
-    display:inline-block;
-}
-
-.pic-card-overlap-tl {
-    top: -20px;
-    left: -10px;
-}
-
-.pic-card-overlap-tr {
-    top: -20px;
-    right: -10px;
-}
-
-.pic-card-overlap-bl {
-    bottom: -20px;
-    left: -10px;
-}
-
-.pic-card-overlap-br {
-    bottom: -20px;
-    right: -10px;
-}
-
-.texts {
-    display: flex;
-    color: #778D87;
-    font-size: 72px;
-    border-radius:1px;
-}
-
-.rotated {
-    color: #E8E8E8;
-}
-
-@media screen and (min-width: 900px){
-
-    .text-wrapper {
-        display: flex;
-        justify-content: end;
-        padding-right: 30px;
-    }
-    
-    .rotated {
-        transform-origin: top left;
-        transform: translate(185px, 115px) rotate(90deg);
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .rotated {
-        margin-left: 30px;
-    }
-
-    .texts {
-        margin-bottom: -80px;
-    }
-}
-
