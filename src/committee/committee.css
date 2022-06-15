@@ -1,3 +1,7 @@
+.wave {
+    overflow-x: hidden;
+}
+
 .committee-div {
     background-color: #28282B;
 }
@@ -99,6 +103,7 @@ img {
     display: flex;
     color: #778D87;
     font-size: 72px;
+    border-radius:1px;
 }
 
 .rotated {
@@ -106,18 +111,17 @@ img {
 }
 
 @media screen and (min-width: 900px){
-    .texts {
-        /* display: flex; */
+
+    .text-wrapper {
+        display: flex;
         justify-content: end;
-        /* color: #778D87; */
-        /* font-size: 72px; */
-        transform:translate(400px, 0px);
+        padding-right: 30px;
     }
     
     .rotated {
         transform-origin: top left;
-        transform: translate(30px, 100px) rotate(90deg);
-        /* color: #E8E8E8; */
+        transform: translate(185px, 115px) rotate(90deg);
+        position: absolute;
     }
 }
 

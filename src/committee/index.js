@@ -53,10 +53,12 @@ const Committee = () => {
   return (
     <div class="committee-div">
         <UpsideDownWaves></UpsideDownWaves>
-        <div class="texts">
-          <h3 class="section-header">THE</h3>
-          <h3 class="section-header rotated">COMMITEE</h3>
-        </div> 
+        <div class="text-wrapper">
+          <div class="texts">
+            <h3 class="section-header">THE</h3>
+            <h3 class="section-header rotated">COMMITEE</h3>
+          </div>
+        </div>
         <div class="card-container-wrapper">
           <div class="card-container">
             <PicCard {...proggieStyling}></PicCard>
