@@ -31,17 +31,8 @@
     border-radius:1px;
 }
 
-.rotated {
-    color: #E8E8E8;
-}
-
-.rotated {
-    margin-left: 30px;
-}
-
 .texts {
     margin-bottom: -80px;
-    padding-left: 20px;
     justify-content: center;
 }
 
@@ -53,11 +44,6 @@
     justify-self: center;
 }
 
-.text-block-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .text-block {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -66,6 +52,60 @@
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.text-block-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+
+@media screen and (max-width: 420px) {
+    .texts {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .text-block {
+        font-size: small;
+        bottom: -25px;
+    }
+    
+    .rotated {
+        margin-left: 15px !important;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 504px) {
+    .texts {
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+
+    .text-block {
+        font-size: large;
+        bottom: -30px;
+    }
+}
+
+@media screen and (min-width: 504px) and (max-width: 590px) {
+    .texts {
+        font-size: 50px;
+    }    
+}
+
+@media screen and (min-width: 590px) and (max-width: 700px) {
+    .texts {
+        font-size: 60px;
+    }
+}
+
+.rotated {
+    color: #E8E8E8;
+}
+
+.rotated {
+    margin-left: 30px;
 }
 
 .pic-card-left {
