@@ -14,7 +14,7 @@
 
 .allText{
     margin: 20px 3% 60px 3%;
-    background-color: #282828E8;
+    /*background-color: #282828E8;*/
     z-index: 1;
 }
 
@@ -70,7 +70,7 @@ iframe{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    filter: opacity(0.7);
+    filter: opacity(0.3);
 }
 
 .cardBG{
@@ -106,4 +106,9 @@ iframe{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.wave{
+    position: relative;
+    bottom: 0;
 }
