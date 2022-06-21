@@ -1,15 +1,16 @@
 import React from 'react'
 import './welcome.css';
 import Waves from './Waves';
+<<<<<<< Updated upstream
 import Head from './Head';
 import BodyPara from './BodyPara'
 import welcomeText from "./welcome.json";
 
+=======
+>>>>>>> Stashed changes
 const Welcome = () => {
-  let headText = welcomeText.head;
-  let bodyTexts = welcomeText.body;
-
   return (
+<<<<<<< Updated upstream
     <div class="allText" style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
       <Head
         text={headText}
@@ -24,6 +25,10 @@ const Welcome = () => {
           })
         }
       </div>
+=======
+    <div>index
+        <Waves></Waves>
+>>>>>>> Stashed changes
 
     </div>
   )
