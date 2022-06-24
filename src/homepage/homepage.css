@@ -88,7 +88,7 @@ svg {
 .logo-div {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     z-index: 2;
     position: absolute;
     display: inline-block;
@@ -174,6 +174,7 @@ svg {
 
 @media screen and (max-width: 920px) {
     .logo {width: 135%}
+    .logo-div {transform: translate(-50%, -50%);}
     .backbg {display: none;}
     .frontbg {display: none;}
     .mobilefrontbg {display: block; position: relative !important; }
