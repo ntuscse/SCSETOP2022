@@ -6,6 +6,8 @@ import MobileBackBg from './MobileBackBg';
 import Logo from './Logo.js';
 import './homepage.css';
 
+const aheight = window.innerHeight - 50.67;
+
 const HomePage = () => {
   return (
     <div class="container" id="gradient">
@@ -24,8 +26,10 @@ const HomePage = () => {
             <button type="button" class="register-button">Register</button>
           </div>
         </div>
-        <FrontBg></FrontBg>
-        <BackBg></BackBg>
+        <svg style={{height:aheight, width:"100%"}} class="wrapper" id="background-gradient">
+          <BackBg></BackBg>
+          <FrontBg></FrontBg>
+        </svg>
         <MobileFrontBg></MobileFrontBg>
         <MobileBackBg></MobileBackBg>
       </div>
