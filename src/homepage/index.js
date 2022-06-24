@@ -32,7 +32,6 @@ const HomePage = () => {
         </svg>
         <MobileBackBg></MobileBackBg>
         <svg style={{height:aheight, width:"100%"}} class="mobile-wrapper">
-          
           <MobileFrontBg></MobileFrontBg>
         </svg>
         
