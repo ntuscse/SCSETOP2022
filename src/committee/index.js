@@ -50,22 +50,26 @@ const logisticsStyling = {
 }
 
 const Committee = () => {
-  return (
+  return (  
     <div class="committee-div">
         <UpsideDownWaves></UpsideDownWaves>
-        <div class="text-wrapper">
-          <div class="texts">
-            <h3 class="section-header">THE</h3>
-            <h3 class="section-header rotated">COMMITEE</h3>
-          </div>
-        </div>
-        <div class="card-container-wrapper">
-          <div class="card-container">
-            <PicCard {...proggieStyling}></PicCard>
-            <PicCard {...GLStyling}></PicCard>
-            <PicCard {...techStyling}></PicCard>
-            <PicCard {...PNPStyling}></PicCard>
-            <PicCard {...logisticsStyling}></PicCard>
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="text-wrapper">
+              <div class="texts">
+                <h3 class="section-header">THE</h3>
+                <h3 class="section-header rotated">COMMITEE</h3>
+              </div>
+            </div>
+            <div class="card-container-wrapper">
+              <div class="card-container">
+                <PicCard {...proggieStyling}></PicCard>
+                <PicCard {...GLStyling}></PicCard>
+                <PicCard {...techStyling}></PicCard>
+                <PicCard {...PNPStyling}></PicCard>
+                <PicCard {...logisticsStyling}></PicCard>
+              </div>
+            </div>
           </div>
         </div>
     </div>

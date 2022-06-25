@@ -2,6 +2,12 @@
     background-color: #28282B;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.content-wrapper {
+    max-width: 1440px;
+    margin: auto;
 }
 
 .img-container {
