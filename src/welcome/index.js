@@ -8,7 +8,6 @@ import welcomeText from "./welcome.json";
 const Welcome = () => {
   let headText = welcomeText.head;
   let bodyTexts = welcomeText.body;
-
   return (
     <div class="allText" style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
       <Head

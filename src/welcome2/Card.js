@@ -25,9 +25,17 @@ const  Card = (props) => {
     //console.log(rotateDeg + ", "+ top + ", "+ right)
 
     let angle = (rotateDeg+7200)%720
-    if((120<angle && angle<240)||(480<angle && angle<600)){
-        cardFace = 52;
+
+    if(rng()<0.5){
+        if(((120<angle && angle<240)||(480<angle && angle<600))){
+            cardFace = 52;
+        }
+    } else {
+        if((!(120<angle && angle<240)&&!(480<angle && angle<600))){
+            cardFace = 52;
+        }
     }
+    
 
     // Distance card is away from screen
     // bigger is nearer
