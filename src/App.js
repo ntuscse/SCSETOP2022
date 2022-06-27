@@ -5,14 +5,14 @@ import Welcome from "./welcome2";
 import GalleryApp from "./gallery";
 import Committee from "./committee";
 import Top5 from "./top5";
-
+import Gallery from "./gallery2";
 function App() {
   return (
     <div className="App">
       {/* uncommment your respective one to work on */}
       <HomePage></HomePage>
       <Welcome></Welcome> {/* Greg */}
-      <GalleryApp></GalleryApp> {/* Guo Yong */}
+      <Gallery></Gallery> {/* Guo Yong */}
       <Top5></Top5>
       <Committee></Committee>
     </div>

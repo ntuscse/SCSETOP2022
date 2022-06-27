@@ -105,11 +105,14 @@ const HomePage = () => {
         }
       );
       var delay = gsap.to({}, LS_randomValsDelay[index], {});
+      var delay2 = gsap.to({}, 1, {});
+
       var toLaser = gsap.to(item.current, { height: 0, width: 0 });
 
       laserTimeline.add(setLaser);
       laserTimeline.add(delay);
       laserTimeline.add(fromtoLaser);
+      laserTimeline.add(delay2);
       laserTimeline.add(toLaser);
     });
 
@@ -179,6 +182,7 @@ const HomePage = () => {
     <p><a href="#gallery" class="link">Gallery</a></p>
     <p><a href="#committee" class="link">Committee</a></p>
     </div>
+    <div class="storm"></div>
 
     <div class="container" id="gradient">
 
@@ -233,9 +237,9 @@ const HomePage = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <Laser class="zzz" ref={laserRef1} x={0} height={0} />
-                <Laser class="zzz" ref={laserRef2} x={120} height={0} />
-                <Laser class="zzz" ref={laserRef3} x={300} height={0} />
+                <Laser class="zzz" ref={laserRef4} x={0} height={0} />
+                <Laser class="zzz" ref={laserRef5} x={120} height={0} />
+                <Laser class="zzz" ref={laserRef6} x={300} height={0} />
 
                 <AirshipKOS ref={airshipRef5} x="scale(0.6) translate(-80,10)" />
                 <AirshipQOH2 ref={airshipRef6} x="scale(0.6) translate(-50,250)" />
