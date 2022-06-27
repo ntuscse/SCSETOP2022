@@ -48,21 +48,21 @@
     }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1500px){
     .photoGalTitle{
-        font-size: 3em;
+        font-size: 2.7em;
     }
     
     .photoGalDesc{
-        font-size: 2em;
-        padding-left: 1.4rem;
-        padding-right: 1.4rem;
+        font-size: 1.9em;
     }
 }
 
-@media screen and (min-width: 1900px){
+
+
+@media screen and (min-width: 2000px){
     .photoGalTitle{
-        font-size: 3.5em;
+        font-size: 3.4em;
     }
     
     .photoGalDesc{

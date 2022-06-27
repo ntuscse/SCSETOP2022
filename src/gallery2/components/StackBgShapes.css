@@ -1,181 +1,203 @@
 .firstLine{
     position: absolute;
-    top: 14vw;
+    top: 4vw;
     right: 0;
     z-index: 0;
 }
 
 .secondLine{
     position: absolute;
-    top: 73vw;
+    top: 63vw;
     left: 0;
     z-index: 0;
 }
   
 .bigSquare{
     position: absolute;
-    top: 15vw;
+    top: 5vw;
     right: 14vw;
     z-index: 0;
 }
   
 .smallSquare{
     position: absolute;
-    top: 77vw;
+    top: 65vw;
     left: 15vw;
     z-index: 0;
 }
 
 @media screen and (min-width: 400px){
     .firstLine{
-        top: 14vw;
+        top: 5vw;
         right: 0;
     }
     
     .secondLine{
-        top: 76vw;
+        top: 66vw;
         left: 0;
     }
   
     .bigSquare{
-        top: 15vw;
+        top: 6vw;
         right: 14vw;
     }
       
     .smallSquare{
-        top: 79vw;
+        top: 67vw;
         left: 15vw;
     }
 }
 
 @media screen and (min-width: 500px){
     .firstLine{
-        top: 14vw;
+        top: 3vw;
         right: 0;
     }
     
     .secondLine{
-        top: 78vw;
+        top: 63vw;
         left: 0;
     }
   
     .bigSquare{
-        top: 15vw;
+        top: 4vw;
         right: 14vw;
     }
       
     .smallSquare{
-        top: 81vw;
+        top: 65vw;
+        left: 15vw;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .firstLine{
+        top: 3vw;
+        right: 0;
+    }
+    
+    .secondLine{
+        top: 58vw;
+        left: 0;
+    }
+  
+    .bigSquare{
+        top: 4vw;
+        right: 14vw;
+    }
+      
+    .smallSquare{
+        top: 60vw;
         left: 15vw;
     }
 }
 
 @media screen and (min-width: 700px){
     .firstLine{
-        top: 4vw;
+        top: 2vw;
         right: 0;
     }
     
     .secondLine{
-        top: 52vw;
+        top: 340px;
         left: 0;
     }
   
     .bigSquare{
-        top: 4vw;
+        top: 2vw;
         right: 23vw;
     }
       
     .smallSquare{
-        top: 55vw;
+        top: 350px;
         left: 18vw;
     }
 }
 
 @media screen and (min-width: 900px){
     .firstLine{
-        top: 4vw;
+        top: 3vw;
         right: 0;
     }
     
     .secondLine{
-        top: 54vw;
+        top: 350px;
         left: 0;
     }
   
     .bigSquare{
-        top: 3vw;
+        top: 2vw;
         right: 25vw;
     }
       
     .smallSquare{
-        top: 56vw;
+        top: 360px;
         left: 25vw;
     }
 }
 
 @media screen and (min-width: 950px){
     .firstLine{
-        top: 4vw;
+        top: 20px;
         right: 0;
     }
     
     .secondLine{
-        top: 53vw;
+        top: 350px;
         left: 0;
     }
   
     .bigSquare{
-        top: 3vw;
+        top: 20px;
         right: 25vw;
     }
       
     .smallSquare{
-        top: 56vw;
+        top: 380px;
         left: 25vw;
     }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1400px){
     .firstLine{
-        top: 4vw;
+        top: 20px;
         right: 0;
     }
     
     .secondLine{
-        top: 48vw;
+        top: 300px;
         left: 0;
     }
   
     .bigSquare{
-        top: 3vw;
+        top: 20px;
         right: 25vw;
     }
       
     .smallSquare{
-        top: 52vw;
+        top: 360px;
         left: 25vw;
     }
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 2000px){
     .firstLine{
-        top: 4vw;
+        top: 40px;
         right: 0;
     }
     
     .secondLine{
-        top: 42vw;
+        top: 450px;
         left: 0;
     }
   
     .bigSquare{
-        top: 3vw;
+        top: 45px;
         right: 25vw;
     }
       
     .smallSquare{
-        top: 45vw;
+        top: 480px;
         left: 25vw;
     }
 }
