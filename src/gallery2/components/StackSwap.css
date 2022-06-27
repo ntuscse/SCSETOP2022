@@ -262,7 +262,7 @@
 @media screen and (min-width: 2000px){
     @keyframes swapNext{
         50% {
-            transform: translate(-50%, calc(var(--y) - 660px)) scale(0.6) rotate(-5deg);
+            transform: translate(-50%, calc(var(--y) - 530px)) scale(0.6) rotate(-5deg);
         }
     
         100%{
@@ -278,12 +278,28 @@
         }
     
         50% {
-            transform: translate(-50%, calc(var(--y) - 420px)) scale(0.6) rotate(-5deg);
+            transform: translate(-50%, calc(var(--y) - 350px)) scale(0.6) rotate(-5deg);
         }
     
         100% {
             transform: translate(-50%, calc(var(--y) + 160px)) scale(1.05);
             z-index: 4;
         } 
+    }
+}
+
+@media screen and (min-width: 3000px){
+    @keyframes swapNext{
+        100%{
+            transform: translate(-50%, calc(var(--y) - 15px)) scale(0.80);
+            z-index: 2;
+        }
+    }
+    
+    @keyframes swapPrev{
+        0%{
+            transform: translate(-50%, calc(var(--y) - 15px)) scale(0.8);
+            z-index: 2;
+        }
     }
 }

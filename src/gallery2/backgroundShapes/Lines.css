@@ -31,3 +31,15 @@
         height: 13vw;
     }
 }
+
+@media screen and (min-width: 2000px){
+    .lineOneShape{
+        width: 25.2vw;
+        height: 120px;
+    }
+    
+    .lineTwoShape{
+        width: 25vw;
+        height: 220px;
+    }
+}

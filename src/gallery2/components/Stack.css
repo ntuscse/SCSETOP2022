@@ -311,11 +311,11 @@
 
 @media screen and (min-width: 1500px){
     .right-arrow{
-        right: 25vw;
+        right: 24.5vw;
     }
   
     .left-arrow{
-        left: 25vw;
+        left: 24.5vw;
     }
 }
 
@@ -331,21 +331,21 @@
     }
 
     .right-arrow{
-        right: 27vw;
+        right: 25vw;
     }
   
     .left-arrow{
-        left: 27vw;
+        left: 25vw;
     }
 }
 
 @media screen and (min-width: 1700px){
     .right-arrow{
-        right: 29vw;
+        right: 25.5vw;
     }
   
     .left-arrow{
-        left: 29vw;
+        left: 25.5vw;
     }
 }
 
@@ -361,11 +361,11 @@
     }
 
     .right-arrow{
-        right: 29vw;
+        right: 26vw;
     }
   
     .left-arrow{
-        left: 29vw;
+        left: 26vw;
     }
 }
 
@@ -379,11 +379,11 @@
     }
 
     .right-arrow{
-        right: 22vw;
+        right: 26vw;
     }
   
     .left-arrow{
-        left: 22vw;
+        left: 26vw;
     }
 
     .sCard{
