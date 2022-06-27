@@ -1,88 +1,54 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import { useDrop } from "react-dnd";
-import fire from "./fire.gif";
+import card from "./card.png";
+import { useMediaQuery } from "react-responsive";
+import NewCard from "./NewCard";
+import styled from "styled-components";
 
-const ALL = ["president", "v. president", "fin conn", "hon gen sec", "cgl"];
+const slides = [
+  { image: card, text: "president" },
+  { image: card, text: "v. president" },
+  { image: card, text: "fin conn" },
+  { image: card, text: "hon gen sec" },
+  { image: card, text: "cgl" },
+];
+
+// styles
+const styles = {
+  container: {
+    backgroundColor: "black",
+    margin: 0,
+    color: "white",
+    paddingTop: "10px",
+    textAlign: "center",
+  },
+  cards: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+  },
+};
 
 const Top5 = () => {
-  const [topArea, setTopArea] = useState([]);
-  const [bottomArea, setBottomArea] = useState(ALL);
-
-  // drop for top area
-  const [{ isOver }, dropRef1] = useDrop(() => ({
-    accept: "card",
-    drop: (item) => replaceCard(item.id),
-    collect: (monitor) => ({
-      isOver: monitor.isOver(),
-    }),
-  }));
-
-  // drop for bottom area
-  const [obj, dropRef2] = useDrop(() => ({
-    accept: "card",
-    drop: (item) => addCard(item.id),
-    collect: (monitor) => ({
-      isOver: monitor.isOver(),
-    }),
-  }));
-
-  // update Card in top area
-  const replaceCard = (id) => {
-    const newArr = [...bottomArea];
-    const index = bottomArea.indexOf(id);
-    if (index > -1) {
-      newArr.splice(index, 1);
-    }
-    setTopArea(() => [id]);
-    setBottomArea(() => newArr);
-  };
-
-  // update card in bottom area
-  const addCard = () => {
-    setBottomArea(() => ALL);
-    setTopArea(() => []);
-  };
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 756px)",
+  });
 
   return (
-    <div style={{ backgroundColor: "#263147" }}>
-      <p>Top 5 Section</p>
-      {/* drop zone */}
-      <div ref={dropRef1} style={{ height: "400px", backgroundColor: "black" }}>
-        {topArea.map((item) => (
-          <Card id={item} />
+    <div style={styles.container}>
+      <h1>Meet the top 5</h1>
+      <p>
+        Hover over a card, to reveal the honorary member from SCSE TOP 2022
+        camp's main commitee!
+      </p>
+      <div
+        style={{
+          ...styles.cards,
+          flexDirection: isDesktopOrLaptop ? "row" : "column",
+        }}
+      >
+        {slides.map((slide, index) => (
+          <NewCard image={slide.image} key={index} />
         ))}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <img
-          src={fire}
-          style={{
-            height: "100px",
-            objectPosition: "70% 70%",
-            width: "200px",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-      {/*image container*/}
-      <div
-        ref={dropRef2}
-        style={{
-          width: "100%",
-          maxWidth: "1440px",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-        }}
-      >
-        {bottomArea.map((item) => {
-          return <Card id={item} />;
-        })}
       </div>
     </div>
   );
