@@ -219,27 +219,27 @@ const Stack = ({ slides }) => {
                 {(current === 4 || next === 4) ? <img {...swipeHandlers} className='sCard' 
                 src={slides[4].image}
                 alt='pics'/> : 
-                <img className='sCard' src='backgroundCard.svg' alt='ace'/>}
+                <img className='sCard' src='CardBack.svg' alt='ace'/>}
 
                 {(current === 3 || next === 3) ? <img {...swipeHandlers} className='sCard'
                 src={slides[3].image}
                 alt='pics'/> :
-                <img className='sCard' src='backgroundCard.svg' alt='ace'/>}
+                <img className='sCard' src='CardBack.svg' alt='ace'/>}
             
                 {(current === 2 || next === 2) ? <img {...swipeHandlers} className='sCard'
                 src={slides[2].image}
                 alt='pics'/> :
-                <img className='sCard' src='backgroundCard.svg' alt='ace'/>}
+                <img className='sCard' src='CardBack.svg' alt='ace'/>}
 
                 {(current === 1 || next === 1) ? <img {...swipeHandlers} className='sCard'
                 src={slides[1].image}
                 alt='pics'/> :
-                <img className='sCard' src='backgroundCard.svg' alt='ace'/>}
+                <img className='sCard' src='CardBack.svg' alt='ace'/>}
 
                 {(current === 0 || next === 0) ? <img {...swipeHandlers} className='sCard'
                 src={slides[0].image}
                 alt='pics'/> :
-                <img className='sCard' src='backgroundCard.svg' alt='ace'/>}
+                <img className='sCard' src='CardBack.svg' alt='ace'/>}
             </div>
 
         </section>
