@@ -8,14 +8,14 @@
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 55vw;
+    height: 80vw;
     position: relative;
 }
 
 .left-arrow, .right-arrow{
     position: absolute;
-    top: 50%;
-    font-size: 2.5rem;
+    top: 10%;
+    font-size: 1.8rem;
     color: #C4C4C4;
     z-index: 10;
     cursor: pointer;
@@ -23,45 +23,41 @@
 }
 
 .right-arrow {
-    right: 4vw;
+    right: 35vw;
 }
   
 .left-arrow {
-    left: 4vw;
+    left: 35vw;
 }
 
 .sCard{
-    width: 44vw;
-    height: 27vw;
+    width: 75vw;
+    height: 50vw;
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
     justify-content: center;
     align-items: center;
-    border-radius: 2rem;
-    /*background-color: #fff;
-    font-family: sans-serif;
-    font-size: 10rem;
-    color: darkblue;*/
-    box-shadow: 0 5px 10px 0 #191919, 0 15px 20px 0 #202020;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 8px 0 #191919, 0 8px 12px 0 #202020;
     transition: transform 400ms;
     z-index: 3;
 }
 
 .sCard:nth-last-child(5){
-    --y: calc(-50% - 45px);
+    --y: calc(-50% - 30px);
     transform: translate(-50%, var(--y)) scale(0.85);
 }
 
 .sCard:nth-last-child(4){
-    --y: calc(-50% - 30px);
+    --y: calc(-50% - 20px);
     transform: translate(-50%, var(--y)) scale(0.9);
 }
 
 .sCard:nth-last-child(3){
-    --y: calc(-50% - 15px);
+    --y: calc(-50% - 10px);
     transform: translate(-50%, var(--y)) scale(0.95);
 }
 
@@ -71,27 +67,51 @@
 }
 
 .sCard:nth-last-child(1){
-    --y: calc(-50% + 15px);
+    --y: calc(-50% + 10px);
     transform: translate(-50%, var(--y)) scale(1.05);
 }
 
 @media screen and (min-width: 400px){
-    .right-arrow, .left-arrow{
-        font-size: 3rem;
-    }
-  
-    .right-arrow{
-        right: 4.5vw;
-    }
-  
-    .left-arrow{
-        left: 4.5vw;
+    .stack{
+        height: 82vw;
     }
 
     .sCard{
-        width: 42vw;
-        height: 27vw;
-        top: 60%;
+        border-radius: 0.9rem;
+    }
+
+    .right-arrow, .left-arrow{
+        font-size: 2.1rem;
+    }
+
+    .sCard:nth-last-child(5){
+        --y: calc(-50% - 45px);
+    }
+    
+    .sCard:nth-last-child(4){
+        --y: calc(-50% - 30px);
+    }
+    
+    .sCard:nth-last-child(3){
+        --y: calc(-50% - 15px);
+    }
+    
+    .sCard:nth-last-child(1){
+        --y: calc(-50% + 15px);
+    }
+}
+
+@media screen and (min-width: 500px){
+    .stack{
+        height: 85vw;
+    }
+
+    .sCard{
+        border-radius: 1rem;
+    }
+
+    .right-arrow, .left-arrow{
+        font-size: 2.5rem;
     }
 
     .sCard:nth-last-child(5){
@@ -111,7 +131,38 @@
     }
 }
 
-@media screen and (min-width: 550px){
+@media screen and (min-width: 600px){
+    .sCard{
+        top: 63%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .stack{
+        height: 65vw;
+    }
+
+    .right-arrow, .left-arrow{
+        font-size: 3.5rem;
+        top: 50%;
+    }
+  
+    .right-arrow{
+        right: 5vw;
+    }
+  
+    .left-arrow{
+        left: 5vw;
+    }
+
+    .sCard{
+        width: 55vw;
+        height: 37vw;
+        top: 55%;
+        border-radius: 1.2rem;
+        box-shadow: 0 5px 10px 0 #191919, 0 15px 20px 0 #202020;
+    }
+
     .sCard:nth-last-child(5){
         --y: calc(-50% - 75px);
     }
@@ -129,59 +180,76 @@
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 900px){
     .right-arrow, .left-arrow{
         font-size: 3.5rem;
+        top: 50%;
     }
   
     .right-arrow{
-        right: 5vw;
+        right: 6vw;
     }
   
     .left-arrow{
-        left: 5vw;
+        left: 6vw;
     }
 
     .sCard{
-        width: 42vw;
-        height: 27vw;
+        width: 57vw;
+        height: 38vw;
+        top: 55%;
+    }
+}
+
+@media screen and (min-width: 950px){
+    .right-arrow, .left-arrow{
+        font-size: 5.5rem;
+    }
+  
+    .right-arrow{
+        right: 10vw;
+    }
+  
+    .left-arrow{
+        left: 10vw;
+    }
+
+    .sCard{
+        width: 50vw;
+        height: 34vw;
         top: 55%;
     }
 
     .sCard:nth-last-child(5){
-        --y: calc(-50% - 90px);
+        --y: calc(-50% - 105px);
     }
     
     .sCard:nth-last-child(4){
-        --y: calc(-50% - 60px);
+        --y: calc(-50% - 70px);
     }
     
     .sCard:nth-last-child(3){
-        --y: calc(-50% - 30px);
+        --y: calc(-50% - 35px);
     }
     
     .sCard:nth-last-child(1){
-        --y: calc(-50% + 30px);
+        --y: calc(-50% + 35px);
     }
 }
 
-@media screen and (min-width: 900px){
-    .right-arrow, .left-arrow{
-        font-size: 6rem;
-    }
-  
+@media screen and (min-width: 1300px){
     .right-arrow{
-        right: 15vw;
+        right: 13vw;
     }
   
     .left-arrow{
-        left: 15vw;
+        left: 13vw;
     }
 
     .sCard{
-        width: 40vw;
-        height: 27vw;
-        top: 60%;
+        width: 45vw;
+        height: 31vw;
+        top: 55%;
     }
 
     .sCard:nth-last-child(5){
@@ -201,7 +269,25 @@
     }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1500px){
+    .stack{
+        height: 58vw;
+    }
+
+    .right-arrow{
+        right: 15vw;
+    }
+  
+    .left-arrow{
+        left: 15vw;
+    }
+
+    .sCard{
+        width: 40vw;
+        height: 27vw;
+        top: 55%;
+    }
+
     .sCard:nth-last-child(5){
         --y: calc(-50% - 135px);
     }
@@ -219,7 +305,11 @@
     }
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1700px){
+    .stack{
+        height: 55vw;
+    }
+
     .sCard:nth-last-child(5){
         --y: calc(-50% - 150px);
     }
@@ -237,7 +327,7 @@
     }
 }
 
-@media screen and (min-width: 1700px){
+@media screen and (min-width: 1900px){
     .sCard:nth-last-child(5){
         --y: calc(-50% - 165px);
     }
@@ -255,20 +345,42 @@
     }
 }
 
-@media screen and (min-width: 1900px){
+@media screen and (min-width: 2000px){
+    .stack{
+        height: 1100px;
+    }
+
+    .right-arrow{
+        right: 14vw;
+    }
+  
+    .left-arrow{
+        left: 14vw;
+    }
+
+    .sCard{
+        width: 850px;
+        height: 580px;
+        top: 55%;
+    }
+
     .sCard:nth-last-child(5){
-        --y: calc(-50% - 180px);
+        --y: -450px;
     }
     
     .sCard:nth-last-child(4){
-        --y: calc(-50% - 120px);
+        --y: -400px;
     }
     
     .sCard:nth-last-child(3){
-        --y: calc(-50% - 60px);
+        --y: -350px;
     }
-    
+
+    .sCard:nth-last-child(2){
+        --y: -300px;
+    }
+
     .sCard:nth-last-child(1){
-        --y: calc(-50% + 60px);
+        --y: -250px;
     }
 }
