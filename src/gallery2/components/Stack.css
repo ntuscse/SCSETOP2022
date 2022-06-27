@@ -8,12 +8,13 @@
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 80vw;
+    height: 65vw;
     position: relative;
 }
 
 .left-arrow, .right-arrow{
     position: absolute;
+    display: none;
     top: 10%;
     font-size: 1.8rem;
     color: #C4C4C4;
@@ -34,7 +35,7 @@
     width: 75vw;
     height: 50vw;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
@@ -73,7 +74,7 @@
 
 @media screen and (min-width: 400px){
     .stack{
-        height: 82vw;
+        height: 66vw;
     }
 
     .sCard{
@@ -103,7 +104,7 @@
 
 @media screen and (min-width: 500px){
     .stack{
-        height: 85vw;
+        height: 68vw;
     }
 
     .sCard{
@@ -132,32 +133,54 @@
 }
 
 @media screen and (min-width: 600px){
+    .stack{
+        height: 60vw;
+    }
+
     .sCard{
-        top: 63%;
+        width: 65vw;
+        height: 44vw;
+    }
+
+    .sCard:nth-last-child(5){
+        --y: calc(-50% - 60px);
+    }
+    
+    .sCard:nth-last-child(4){
+        --y: calc(-50% - 40px);
+    }
+    
+    .sCard:nth-last-child(3){
+        --y: calc(-50% - 20px);
+    }
+    
+    .sCard:nth-last-child(1){
+        --y: calc(-50% + 20px);
     }
 }
 
 @media screen and (min-width: 700px){
     .stack{
-        height: 65vw;
+        height: 400px;
     }
 
     .right-arrow, .left-arrow{
         font-size: 3.5rem;
         top: 50%;
+        display: unset;
     }
   
     .right-arrow{
-        right: 5vw;
+        right: 7vw;
     }
   
     .left-arrow{
-        left: 5vw;
+        left: 7vw;
     }
 
     .sCard{
-        width: 55vw;
-        height: 37vw;
+        width: 370px;
+        height: 250px;
         top: 55%;
         border-radius: 1.2rem;
         box-shadow: 0 5px 10px 0 #191919, 0 15px 20px 0 #202020;
@@ -180,111 +203,51 @@
     }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px){
+    .stack{
+        height: 400px;
+    }
+
     .right-arrow, .left-arrow{
         font-size: 3.5rem;
         top: 50%;
     }
   
     .right-arrow{
-        right: 6vw;
+        right: 8vw;
     }
   
     .left-arrow{
-        left: 6vw;
+        left: 8vw;
     }
 
     .sCard{
-        width: 57vw;
-        height: 38vw;
+        width: 400px;
+        height: 270px;
         top: 55%;
     }
 }
 
 @media screen and (min-width: 950px){
-    .right-arrow, .left-arrow{
-        font-size: 5.5rem;
-    }
-  
-    .right-arrow{
-        right: 10vw;
-    }
-  
-    .left-arrow{
-        left: 10vw;
-    }
-
-    .sCard{
-        width: 50vw;
-        height: 34vw;
-        top: 55%;
-    }
-
-    .sCard:nth-last-child(5){
-        --y: calc(-50% - 105px);
-    }
-    
-    .sCard:nth-last-child(4){
-        --y: calc(-50% - 70px);
-    }
-    
-    .sCard:nth-last-child(3){
-        --y: calc(-50% - 35px);
-    }
-    
-    .sCard:nth-last-child(1){
-        --y: calc(-50% + 35px);
-    }
-}
-
-@media screen and (min-width: 1300px){
-    .right-arrow{
-        right: 13vw;
-    }
-  
-    .left-arrow{
-        left: 13vw;
-    }
-
-    .sCard{
-        width: 45vw;
-        height: 31vw;
-        top: 55%;
-    }
-
-    .sCard:nth-last-child(5){
-        --y: calc(-50% - 120px);
-    }
-    
-    .sCard:nth-last-child(4){
-        --y: calc(-50% - 80px);
-    }
-    
-    .sCard:nth-last-child(3){
-        --y: calc(-50% - 40px);
-    }
-    
-    .sCard:nth-last-child(1){
-        --y: calc(-50% + 40px);
-    }
-}
-
-@media screen and (min-width: 1500px){
     .stack{
-        height: 34vw;
+        height: 450px;
     }
 
+    .right-arrow, .left-arrow{
+        font-size: 4.5rem;
+    }
+  
     .right-arrow{
-        right: 20vw;
+        right: 15vw;
     }
   
     .left-arrow{
-        left: 20vw;
+        left: 15vw;
     }
 
     .sCard{
-        width: 30vw;
-        height: 20vw;
+        width: 430px;
+        height: 290px;
         top: 55%;
     }
 
@@ -305,75 +268,140 @@
     }
 }
 
-@media screen and (min-width: 1700px){
-    .stack{
-        height: 55vw;
+@media screen and (min-width: 1100px){
+    .right-arrow{
+        right: 17vw;
     }
-
-    .sCard:nth-last-child(5){
-        --y: calc(-50% - 150px);
-    }
-    
-    .sCard:nth-last-child(4){
-        --y: calc(-50% - 100px);
-    }
-    
-    .sCard:nth-last-child(3){
-        --y: calc(-50% - 50px);
-    }
-    
-    .sCard:nth-last-child(1){
-        --y: calc(-50% + 50px);
+  
+    .left-arrow{
+        left: 17vw;
     }
 }
 
-@media screen and (min-width: 1900px){
-    .sCard:nth-last-child(5){
-        --y: calc(-50% - 165px);
+@media screen and (min-width: 1200px){
+    .right-arrow{
+        right: 19vw;
     }
-    
-    .sCard:nth-last-child(4){
-        --y: calc(-50% - 110px);
+  
+    .left-arrow{
+        left: 19vw;
     }
-    
-    .sCard:nth-last-child(3){
-        --y: calc(-50% - 55px);
+}
+
+@media screen and (min-width: 1300px){
+    .right-arrow{
+        right: 21vw;
     }
-    
-    .sCard:nth-last-child(1){
-        --y: calc(-50% + 55px);
+  
+    .left-arrow{
+        left: 21vw;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .right-arrow{
+        right: 23vw;
+    }
+  
+    .left-arrow{
+        left: 23vw;
+    }
+}
+
+
+@media screen and (min-width: 1500px){
+    .right-arrow{
+        right: 25vw;
+    }
+  
+    .left-arrow{
+        left: 25vw;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .stack{
+        height: 480px;
+    }
+
+    .sCard{
+        width: 450px;
+        height: 310px;
+        top: 55%;
+    }
+
+    .right-arrow{
+        right: 27vw;
+    }
+  
+    .left-arrow{
+        left: 27vw;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .right-arrow{
+        right: 29vw;
+    }
+  
+    .left-arrow{
+        left: 29vw;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .stack{
+        height: 550px;
+    }
+
+    .sCard{
+        width: 500px;
+        height: 340px;
+        top: 55%;
+    }
+
+    .right-arrow{
+        right: 29vw;
+    }
+  
+    .left-arrow{
+        left: 29vw;
     }
 }
 
 @media screen and (min-width: 2000px){
     .stack{
-        height: 1100px;
+        height: 650px;
+    }
+
+    .right-arrow, .left-arrow{
+        font-size: 6rem;
     }
 
     .right-arrow{
-        right: 14vw;
+        right: 22vw;
     }
   
     .left-arrow{
-        left: 14vw;
+        left: 22vw;
     }
 
     .sCard{
-        width: 850px;
-        height: 580px;
-        top: 55%;
+        width: 600px;
+        height: 410px;
+        top: 450px;
     }
 
     .sCard:nth-last-child(5){
-        --y: -450px;
+        --y: -420px;
     }
     
     .sCard:nth-last-child(4){
-        --y: -400px;
+        --y: -380px;
     }
     
     .sCard:nth-last-child(3){
-        --y: -350px;
+        --y: -340px;
     }
 
     .sCard:nth-last-child(2){
@@ -381,6 +409,6 @@
     }
 
     .sCard:nth-last-child(1){
-        --y: -250px;
+        --y: -260px;
     }
 }
