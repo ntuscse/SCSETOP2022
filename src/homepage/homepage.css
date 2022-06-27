@@ -53,6 +53,11 @@ svg {
     z-index: 0;
 }
 
+.logoImage {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
 .logo {
     position: relative;
     display: flex;
@@ -92,7 +97,7 @@ svg {
     z-index: 2;
     position: absolute;
     display: inline-block;
-
+    text-align: center;
 }
 
 .navbar {
@@ -131,6 +136,7 @@ svg {
     position: relative;
     padding: 10px 10px;
     text-decoration: none;
+    color: white;
 }
 
 .navbar a:hover {
@@ -203,6 +209,11 @@ svg {
     .navbar {padding: 0 10%}
 }
 
+@media screen and (max-width: 582px) {
+
+
+}
+
 /* Portrait tablet screens */
 @media screen and (max-width: 920px) {
     .logo {width: 135%}
@@ -216,4 +227,6 @@ svg {
     /* .bg-div {background-color: transparent; background-image: linear-gradient(#335A60, #738883); } */
     .container {width: 100%; height: 100%; top: 0; left: 0; overflow: hidden; position: relative;}
     .bg-div {position: relative; width: 100%; height: 100%; display: block; background-image: linear-gradient(#335A60, #738883); background-color: black; }
+    .navbar a { padding: 14px 30px; }
+    .navbar { padding: 0; }
 }
