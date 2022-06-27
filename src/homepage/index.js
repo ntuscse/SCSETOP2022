@@ -50,8 +50,8 @@ const HomePage = () => {
   const laserRef4 = useRef();
   const laserRef5 = useRef();
   const laserRef6 = useRef();
-  const laserRefs = [laserRef1, laserRef2, laserRef3];
-  const LS_randomValsDelay = [getRandomValue(1,7), getRandomValue(1,5), getRandomValue(1,12), getRandomValue(1,8)];
+  const laserRefs = [laserRef1, laserRef2, laserRef3, laserRef4,laserRef5, laserRef6];
+  const LS_randomValsDelay = [getRandomValue(1,7), getRandomValue(1,5), getRandomValue(1,12), getRandomValue(1,8), getRandomValue(1,6), getRandomValue(1,12)];
 
 
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -97,10 +97,10 @@ const HomePage = () => {
 
       var fromtoLaser = gsap.fromTo(
         item.current,
-        { height: 0, width: 45 },
+        { height: 0, width: WIDTH> 700 ? 45 : 10 },
         {
           height: HEIGHT + 300,
-          width: 45,
+          width: WIDTH > 700 ? 45 : 10,
           duration: 1,
         }
       );
@@ -233,9 +233,9 @@ const HomePage = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* <Laser class="zzz" ref={laserRef1} x={500} height={0} /> */}
-                {/* <Laser class="zzz" ref={laserRef2} x={500} height={0} />
-                <Laser class="zzz" ref={laserRef3} x={500} height={0} /> */}
+                <Laser class="zzz" ref={laserRef1} x={0} height={0} />
+                <Laser class="zzz" ref={laserRef2} x={120} height={0} />
+                <Laser class="zzz" ref={laserRef3} x={300} height={0} />
 
                 <AirshipKOS ref={airshipRef5} x="scale(0.6) translate(-80,10)" />
                 <AirshipQOH2 ref={airshipRef6} x="scale(0.6) translate(-50,250)" />
