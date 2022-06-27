@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import card from "./card.png";
 import { useMediaQuery } from "react-responsive";
 import NewCard from "./NewCard";
-import styled from "styled-components";
 
 const slides = [
   { image: card, text: "president" },
@@ -18,13 +17,16 @@ const styles = {
     backgroundColor: "black",
     margin: 0,
     color: "white",
-    paddingTop: "10px",
+    padding: "30px 0px 70px 0px",
     textAlign: "center",
   },
   cards: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-evenly",
+  },
+  title: {
+    fontSize: "3em",
   },
 };
 
@@ -35,7 +37,7 @@ const Top5 = () => {
 
   return (
     <div style={styles.container}>
-      <h1>Meet the top 5</h1>
+      <h1 style={styles.title}>Meet the top 5</h1>
       <p>
         Hover over a card, to reveal the honorary member from SCSE TOP 2022
         camp's main commitee!

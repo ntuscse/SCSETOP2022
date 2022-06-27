@@ -14,12 +14,6 @@ function App() {
       <Welcome></Welcome> {/* Greg */}
       <GalleryApp></GalleryApp> {/* Guo Yong */}
       <Top5></Top5>
-      <div className="test">
-        <h1>Committee part</h1>
-        <p>TOP 5</p>
-        <p>Main Comms</p>
-        <p>Sub Comms</p>
-      </div>
       <Committee></Committee>
     </div>
   );
