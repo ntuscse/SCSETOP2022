@@ -271,37 +271,37 @@
 
 @media screen and (min-width: 1500px){
     .stack{
-        height: 58vw;
+        height: 34vw;
     }
 
     .right-arrow{
-        right: 15vw;
+        right: 20vw;
     }
   
     .left-arrow{
-        left: 15vw;
+        left: 20vw;
     }
 
     .sCard{
-        width: 40vw;
-        height: 27vw;
+        width: 30vw;
+        height: 20vw;
         top: 55%;
     }
 
     .sCard:nth-last-child(5){
-        --y: calc(-50% - 135px);
-    }
-    
-    .sCard:nth-last-child(4){
         --y: calc(-50% - 90px);
     }
     
+    .sCard:nth-last-child(4){
+        --y: calc(-50% - 60px);
+    }
+    
     .sCard:nth-last-child(3){
-        --y: calc(-50% - 45px);
+        --y: calc(-50% - 30px);
     }
     
     .sCard:nth-last-child(1){
-        --y: calc(-50% + 45px);
+        --y: calc(-50% + 30px);
     }
 }
 
