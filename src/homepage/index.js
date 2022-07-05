@@ -203,7 +203,7 @@ const HomePage = () => {
         <div class="logo-div">
           <Logo></Logo>
           <div class="button">
-            <button type="button" class="register-button">Register</button>
+            <a type="button" class="register-button" href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank">Register</a>
           </div>
         </div>
         <svg style={{height:aheight, width:"100%"}} class="wrapper" id="background-gradient">

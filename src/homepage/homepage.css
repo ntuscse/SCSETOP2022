@@ -9,6 +9,7 @@
 	overflow:hidden;
 	position:absolute;
 	animation:flash 15s linear infinite;
+    pointer-events: none;
 }
 
 @keyframes flash{ 
@@ -73,7 +74,7 @@ svg {
 
 .logoImage {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .logo {
@@ -175,6 +176,7 @@ svg {
 }
 
 .button {
+    z-index: 50;
     position: relative;
     text-align: center;
 }
@@ -183,6 +185,7 @@ svg {
     background-color: rgba(196, 196, 196, 0.4);
     border: none;
     border-radius: 12px;
+    text-decoration: none;
     color: #E8E8E8;
     font-family: Inter, sans-serif;
     text-align: center;

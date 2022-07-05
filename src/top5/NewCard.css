@@ -46,3 +46,7 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  .flip-card-back img {
+    border-radius: 10px;
+  }
