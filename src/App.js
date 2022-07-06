@@ -6,7 +6,7 @@ import GalleryApp from "./gallery";
 import Committee from "./committee";
 import Top5 from "./top5";
 import Gallery from "./gallery2";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Photos from "./photos";
 import Committee2 from "./committe2";
 
@@ -26,8 +26,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/photos" element={<Photos />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
