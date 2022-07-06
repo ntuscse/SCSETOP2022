@@ -6,16 +6,29 @@ import GalleryApp from "./gallery";
 import Committee from "./committee";
 import Top5 from "./top5";
 import Gallery from "./gallery2";
-function App() {
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import Photos from "./photos";
+
+function Home() {
   return (
     <div className="App">
-      {/* uncommment your respective one to work on */}
       <HomePage></HomePage>
-      <Welcome></Welcome> {/* Greg */}
-      <Gallery></Gallery> {/* Guo Yong */}
+      <Welcome></Welcome>
+      <Gallery></Gallery>
       <Top5></Top5>
       <Committee></Committee>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/photos" element={<Photos />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
