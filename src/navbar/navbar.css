@@ -51,10 +51,24 @@
 }
 
 /* Adjustment for landscape tablet screens */
+@media screen and (max-width: 500px) {
+    .navbar {padding: 0 2% !important; justify-content: right;}
+    .navbar a {font-size: 12px; padding: 4% 4%;}
+    .navbar a {display: none;}
+    .navbar a.hamburger-menu {float: right !important; display: block;}
+    .link {position: relative; padding: 10px 10px;}
+}
+
+@media screen and (max-width: 500px) {
+    /* .navbar.responsive {position: relative; height: 225px; display: block;} */
+    .navbar.responsive a {float: none !important; display: block !important; text-align: left;}
+    .navbar.responsive a.hamburger-menu {text-align: right !important;}
+}
+
+/* Adjustment for landscape tablet screens */
 @media screen and (max-width: 1200px) {
     .navbar {padding: 0 10%}
 }
-
 
 /* Portrait tablet screens */
 @media screen and (max-width: 920px) {

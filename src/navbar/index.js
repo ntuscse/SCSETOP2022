@@ -43,7 +43,7 @@ const Navbar = () => {
         <p><Link to="/#about" class="link" smooth>About</Link></p>
         <p><Link to="/#gallery" class="link" smooth>Gallery</Link></p>
         <p><Link to="/#committee" class="link" smooth>Committee</Link></p>
-    </div>
+     </div>
     <div class="navbar-center">
         <div class="navbar">
         <a onClick={openMenu} class="hamburger-menu"><img src={hamburgerMenu} /></a>
