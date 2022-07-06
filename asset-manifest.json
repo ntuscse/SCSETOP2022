@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SCSETOP2022/static/css/main.22b61ec5.css",
-    "main.js": "/SCSETOP2022/static/js/main.c3431539.js",
+    "main.js": "/SCSETOP2022/static/js/main.9170a117.js",
     "static/js/787.fed5ecff.chunk.js": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js",
     "static/media/IMG_1.JPG": "/SCSETOP2022/static/media/IMG_1.0c34d59024592b8ed610.JPG",
     "static/media/IMG_2.JPG": "/SCSETOP2022/static/media/IMG_2.316555a1dd324dc4d99c.JPG",
@@ -12,6 +12,7 @@
     "static/media/AnonymousPro-Regular.ttf": "/SCSETOP2022/static/media/AnonymousPro-Regular.e7c1fd363699a9483f8f.ttf",
     "static/media/card.png": "/SCSETOP2022/static/media/card.5f2a7dc7f6f3f76719d7.png",
     "static/media/logo.svg": "/SCSETOP2022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/CardBack.svg": "/SCSETOP2022/static/media/CardBack.fdba8731175085ae97efd2337409914f.svg",
     "static/media/cardback.svg": "/SCSETOP2022/static/media/cardback.e354571fa6f15994636f5e4553fc0dd5.svg",
     "static/media/KS.svg": "/SCSETOP2022/static/media/KS.a565814f262847966a794455f6f5feae.svg",
     "static/media/KH.svg": "/SCSETOP2022/static/media/KH.14cc021c612483740c88a1d2883772fe.svg",
@@ -70,11 +71,11 @@
     "index.html": "/SCSETOP2022/index.html",
     "static/media/hamburgerMenu.svg": "/SCSETOP2022/static/media/hamburgerMenu.43b89391bbabf5ed6a31ff82d5822bdc.svg",
     "main.22b61ec5.css.map": "/SCSETOP2022/static/css/main.22b61ec5.css.map",
-    "main.c3431539.js.map": "/SCSETOP2022/static/js/main.c3431539.js.map",
+    "main.9170a117.js.map": "/SCSETOP2022/static/js/main.9170a117.js.map",
     "787.fed5ecff.chunk.js.map": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22b61ec5.css",
-    "static/js/main.c3431539.js"
+    "static/js/main.9170a117.js"
   ]
 }
