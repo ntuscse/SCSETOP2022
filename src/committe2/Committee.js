@@ -1,4 +1,5 @@
 import React from "react";
+import FlipCard from "./FlipCard";
 
 function Committee({
   name,
@@ -16,39 +17,23 @@ function Committee({
       </div>
       <div className="row">
         <div className="column">
-          {col1Pics.map((item) => (
-            <img
-              alt="pompu"
-              src={process.env.PUBLIC_URL + item}
-              style={{ width: "100%" }}
-            />
+          {col1Pics.map(({ path, text }) => (
+            <FlipCard path={path} text={text} />
           ))}
         </div>
         <div className="column">
-          {col2Pics.map((item) => (
-            <img
-              alt="pompu"
-              src={process.env.PUBLIC_URL + item}
-              style={{ width: "100%" }}
-            />
+          {col2Pics.map(({ path, text }) => (
+            <FlipCard path={path} text={text} />
           ))}
         </div>
         <div className="column">
-          {col3Pics.map((item) => (
-            <img
-              alt="pompu"
-              src={process.env.PUBLIC_URL + item}
-              style={{ width: "100%" }}
-            />
+          {col3Pics.map(({ path, text }) => (
+            <FlipCard path={path} text={text} />
           ))}
         </div>
         <div className="column">
-          {col4Pics.map((item) => (
-            <img
-              alt="pompu"
-              src={process.env.PUBLIC_URL + item}
-              style={{ width: "100%" }}
-            />
+          {col4Pics.map(({ path, text }) => (
+            <FlipCard path={path} text={text} />
           ))}
         </div>
       </div>

@@ -7,7 +7,7 @@ import Committee from "./committee";
 import Top5 from "./top5";
 import Gallery from "./gallery2";
 import Navbar from "./navbar";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Photos from "./photos";
 import Committee2 from "./committe2";
 function Home() {
@@ -29,8 +29,8 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
         <Route path="/photos" element={<Photos />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
