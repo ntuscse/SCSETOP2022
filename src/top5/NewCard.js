@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewCard.css";
-import cardback from "./cardback.svg";
+import cardback from "./images/cardback.svg";
 
 function NewCard({ image }) {
   return (
