@@ -3,7 +3,7 @@ import Committee from "./Committee";
 
 function Committee2() {
   return (
-    <>
+    <div id="committee">
       <Committee
         name="OGLs"
         description="Meet your OGLs"
@@ -63,7 +63,7 @@ function Committee2() {
         col3Pics={[{ path: "/CommitteePics/logs2_nomask.jpg", text: "Logs" }]}
         col4Pics={[{ path: "/CommitteePics/TOP5.jpg", text: "Top 5" }]}
       />
-    </>
+    </div>
   );
 }
 

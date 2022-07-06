@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./photos.css";
 import hamburgerMenu from "../homepage/hamburgerMenu.svg";
+import { Link } from "react-router-dom";
 
 function Photos() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -40,24 +41,24 @@ function Photos() {
         style={{ display: navbarOpen ? "block" : "none" }}
       >
         <p>
-          <a href="#register" class="link">
+          <Link to="/" class="link">
             Register
-          </a>
+          </Link>
         </p>
         <p>
-          <a href="#about" class="link">
+          <Link to="/" class="link">
             About
-          </a>
+          </Link>
         </p>
         <p>
-          <a href="#gallery" class="link">
+          <Link to="/" class="link">
             Gallery
-          </a>
+          </Link>
         </p>
         <p>
-          <a href="#committee" class="link">
+          <Link to="/" class="link">
             Committee
-          </a>
+          </Link>
         </p>
       </div>
       <div>
@@ -70,18 +71,18 @@ function Photos() {
               class="navbar-links"
               style={{ display: navbarOpen ? "none" : "block" }}
             >
-              <a href="#register" class="link">
+              <Link to="/#register" class="link">
                 Register
-              </a>
-              <a href="#about" class="link">
+              </Link>
+              <Link to="/#about" class="link">
                 About
-              </a>
-              <a href="#gallery" class="link">
+              </Link>
+              <Link to="/#gallery" class="link">
                 Gallery
-              </a>
-              <a href="#committee" class="link">
+              </Link>
+              <Link to="/#committee" class="link">
                 Committee
-              </a>
+              </Link>
             </div>
           </div>
         </div>
