@@ -1,4 +1,4 @@
-.header {
+/* .header {
     text-align: center;
     color: white;
   }
@@ -18,7 +18,8 @@
     vertical-align: middle;
   }
   
-  /* Tablet Styles */
+
+
   @media only screen and (min-width: 481px) {
       .column {
         flex: 50%;
@@ -26,11 +27,26 @@
       }
   }
   
-  
-  /* Desktop Styles */
   @media only screen and (min-width: 1024px) {
       .column {
         flex: 33.3%;
         max-width: 33.3%;
       }
+  } */
+
+  #ogls {
+    color: #777e8d;
+  }
+
+  #proggies {
+    color: #8b778d;
+    /* color: #8d8d77; */
+    /* color: #8d8877; */
+  }
+
+  #youdontseeus {
+    color: #8d7777;
+    /* color: #778d77; */
+    /* color: #8d7877; */
+    /* color: #778c8d; */
   }

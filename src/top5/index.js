@@ -10,9 +10,10 @@ import NewCard from "./NewCard";
 const slides = [
   { image: boonyen, text: "president" },
   { image: bryan, text: "v. president" },
-  { image: lingyin, text: "fin conn" },
-  { image: sean, text: "hon gen sec" },
   { image: teresa, text: "cgl" },
+  { image: lingyin, text: "hon gen sec" },
+  { image: sean, text: "fin conn" },
+
 ];
 
 // styles
@@ -30,6 +31,7 @@ const styles = {
     justifyContent: "space-evenly",
   },
   title: {
+    color: "#778D87",
     fontSize: "3em",
   },
 };
@@ -41,7 +43,7 @@ const Top5 = () => {
 
   return (
     <div  id="committee" style={styles.container}>
-      <h1 style={styles.title}>Meet the top 5</h1>
+      <h1 style={styles.title}>Meet the TOP 5</h1>
       <p>
         Hover over a card, to reveal the honorary member from SCSE TOP 2022
         camp's main commitee!

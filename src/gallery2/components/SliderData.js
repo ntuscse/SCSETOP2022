@@ -1,29 +1,26 @@
-import image1 from "../images/IMG_1.JPG";
-import image2 from "../images/IMG_2.JPG";
-import image3 from "../images/IMG_3.JPG";
-import image4 from "../images/IMG_4.JPG";
-import image5 from "../images/IMG_5.JPG";
-
-
 export const SliderData = [
     {
       image:
-        image1
+        process.env.PUBLIC_URL + "/OldCamp/oc3.jpg"
     },
     {
       image:
-        image2
+      process.env.PUBLIC_URL + "/OldCamp/oc1.jpg"
+
     },
     {
       image:
-        image3
+      process.env.PUBLIC_URL + "/OldCamp/oc6.jpg"
+
     },
     {
       image:
-        image4
+        process.env.PUBLIC_URL + "/OldCamp/oc14.jpg"
+        
     },
     {
       image:
-        image5
+      process.env.PUBLIC_URL + "/OldCamp/oc2.jpg"
+
     }
   ];

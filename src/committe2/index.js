@@ -5,7 +5,8 @@ function Committee2() {
   return (
     <div id="committee">
       <Committee
-        name="OGLs"
+        id="ogls"
+        name="Orientation Group Leaders"
         description="Meet your OGLs"
         col1Pics={[
           { path: "/CommitteePics/aguni1_nomask.jpg", text: "Aguni" },
@@ -36,6 +37,7 @@ function Committee2() {
         ]}
       />
       <Committee
+      id="proggies"
         name="Programmers"
         description="These guys run the games!"
         col1Pics={[
@@ -56,6 +58,7 @@ function Committee2() {
         ]}
       />
       <Committee
+        id="youdontseeus"
         name="Tech, Logistics and The Top 5"
         description="Providing you with round the clock backend support"
         col1Pics={[{ path: "/CommitteePics/tech_mask.jpg", text: "Tech" }]}

@@ -1,7 +1,9 @@
 import React from "react";
 import FlipCard from "./FlipCard";
+import "./Commitee.css";
 
 function Committee({
+  id,
   name,
   description,
   col1Pics,
@@ -12,7 +14,7 @@ function Committee({
   return (
     <div>
       <div className="header">
-        <h1>{name}</h1>
+        <h1 id={id} >{name}</h1>
         <p>{description}</p>
       </div>
       <div className="row">
