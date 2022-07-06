@@ -10,7 +10,7 @@ import LineOne from '../backgroundShapes/LineOne';
 import LineTwo from '../backgroundShapes/LineTwo';
 import BigSquare from '../backgroundShapes/BigSquare';
 import SmallSquare from '../backgroundShapes/SmallSquare';
-
+import CardBack from '../images/CardBack.svg';
 
 const Stack = ({ slides }) => {
     const [{current, next, complete}, setValue] = useState({current: 0, next: -1, complete: true});
@@ -220,27 +220,27 @@ const Stack = ({ slides }) => {
                 {(current === 4 || next === 4) ? <img {...swipeHandlers} className='sCard' 
                 src={slides[4].image}
                 alt='pics'/> : 
-                <img className='sCard' src={process.env.PUBLIC_URL + '/Cardback.svg'} alt='ace'/>}
+                <img className='sCard' src={CardBack} alt='ace'/>}
 
                 {(current === 3 || next === 3) ? <img {...swipeHandlers} className='sCard'
                 src={slides[3].image}
                 alt='pics'/> :
-                <img className='sCard' src={process.env.PUBLIC_URL + '/Cardback.svg'} alt='ace'/>}
+                <img className='sCard' src={CardBack} alt='ace'/>}
             
                 {(current === 2 || next === 2) ? <img {...swipeHandlers} className='sCard'
                 src={slides[2].image}
                 alt='pics'/> :
-                <img className='sCard' src={process.env.PUBLIC_URL + '/Cardback.svg'} alt='ace'/>}
+                <img className='sCard' src={CardBack} alt='ace'/>}
 
                 {(current === 1 || next === 1) ? <img {...swipeHandlers} className='sCard'
                 src={slides[1].image}
                 alt='pics'/> :
-                <img className='sCard' src={process.env.PUBLIC_URL + '/Cardback.svg'} alt='ace'/>}
+                <img className='sCard' src={CardBack} alt='ace'/>}
 
                 {(current === 0 || next === 0) ? <img {...swipeHandlers} className='sCard'
                 src={slides[0].image}
                 alt='pics'/> :
-                <img className='sCard' src={process.env.PUBLIC_URL + '/Cardback.svg'} alt='ace'/>}
+                <img className='sCard' src={CardBack} alt='ace'/>}
             </div>
 
         </section>

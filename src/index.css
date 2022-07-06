@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -20,13 +21,6 @@ code {
                             'embedded-opentype', and 'svg' */
 }
 
-
-@font-face {
-  font-family: 'Audiowide';
-  src: url(./fonts/Audiowide.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
 @font-face {
   font-family: 'AnonymousPro';
   src: url(./fonts/AnonymousPro-Regular.ttf) format('truetype');

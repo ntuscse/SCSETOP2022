@@ -80,7 +80,7 @@ const Welcome = () => {
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
-            url='https://www.youtube.com/watch?v=erEgovG9WBs'
+            url='https://m.youtube.com/watch?v=BSZkm9IXxcg'
             width='100%'
             height='100%'
             controls
