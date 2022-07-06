@@ -12,8 +12,7 @@ import AirshipKOS from './svgs/AirshipKOS.js';
 import AirshipKOD from './svgs/AirshipKOD.js';
 import AirshipKOC from './svgs/AirshipKOC.js';
 import AirshipQOH2 from './svgs/AirshipQOH2.js';
-
-
+import RegisterBtn from './svgs/register.svg';
 const aheight = window.innerHeight - 50.67;
 
 
@@ -203,7 +202,8 @@ const HomePage = () => {
         <div class="logo-div">
           <Logo></Logo>
           <div class="button">
-            <a type="button" class="register-button" href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank">Register</a>
+            <a href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank"><img class="register" src={RegisterBtn}></img></a>
+            {/* <a type="button" class="register-button" href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank">Register</a> */}
           </div>
         </div>
         <svg style={{height:aheight, width:"100%"}} class="wrapper" id="background-gradient">
