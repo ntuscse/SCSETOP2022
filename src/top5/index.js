@@ -1,14 +1,18 @@
 import React from "react";
-import card from "./card.png";
+import boonyen from "./images/Card front (boonyen).png";
+import bryan from "./images/Card front (bryan).png";
+import lingyin from "./images/Card front (lingyin).png";
+import sean from "./images/Card front (sean).png";
+import teresa from "./images/Card front (teresa).png";
 import { useMediaQuery } from "react-responsive";
 import NewCard from "./NewCard";
 
 const slides = [
-  { image: card, text: "president" },
-  { image: card, text: "v. president" },
-  { image: card, text: "fin conn" },
-  { image: card, text: "hon gen sec" },
-  { image: card, text: "cgl" },
+  { image: boonyen, text: "president" },
+  { image: bryan, text: "v. president" },
+  { image: lingyin, text: "fin conn" },
+  { image: sean, text: "hon gen sec" },
+  { image: teresa, text: "cgl" },
 ];
 
 // styles
