@@ -1,11 +1,4 @@
 
-@font-face {
-    font-family: 'Audiowide';
-    src: url(../fonts/Audiowide.ttf) format('truetype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
-
 .text{
     margin-top: 0;
     margin-bottom: 0;
@@ -20,6 +13,7 @@
 }
 
 .allText{
+    text-align: center;
     margin: 20px 3% 60px 3%;
     /*background-color: #282828E8;*/
     z-index: 1;
@@ -35,8 +29,9 @@
 
 .bodyPara{
     margin: 50px 3% 50px 3%;
-    margin-bottom: calc(5vw + 30px);
-
+    margin-bottom: calc(2vw);
+    line-height: 2em;
+    white-space: pre-wrap;
     padding: 20px 0;
 }
 
