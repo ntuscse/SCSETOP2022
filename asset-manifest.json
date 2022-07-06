@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SCSETOP2022/static/css/main.22b61ec5.css",
-    "main.js": "/SCSETOP2022/static/js/main.21a044ce.js",
+    "main.css": "/SCSETOP2022/static/css/main.2344600f.css",
+    "main.js": "/SCSETOP2022/static/js/main.2954563a.js",
     "static/js/787.fed5ecff.chunk.js": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js",
     "static/media/IMG_1.JPG": "/SCSETOP2022/static/media/IMG_1.0c34d59024592b8ed610.JPG",
     "static/media/IMG_2.JPG": "/SCSETOP2022/static/media/IMG_2.316555a1dd324dc4d99c.JPG",
@@ -9,8 +9,12 @@
     "static/media/IMG_3.JPG": "/SCSETOP2022/static/media/IMG_3.b4755458f6c96485018d.JPG",
     "static/media/IMG_5.JPG": "/SCSETOP2022/static/media/IMG_5.3039631dd51dda00326c.JPG",
     "static/media/Picture.png": "/SCSETOP2022/static/media/Picture.7397d62e13f77e5bdd7c.png",
+    "static/media/Card front (boonyen).png": "/SCSETOP2022/static/media/Card front (boonyen).e1d7c7e6d7bd33e75fd6.png",
     "static/media/AnonymousPro-Regular.ttf": "/SCSETOP2022/static/media/AnonymousPro-Regular.e7c1fd363699a9483f8f.ttf",
-    "static/media/card.png": "/SCSETOP2022/static/media/card.5f2a7dc7f6f3f76719d7.png",
+    "static/media/Card front (lingyin).png": "/SCSETOP2022/static/media/Card front (lingyin).da1284128929d776e7fd.png",
+    "static/media/Card front (sean).png": "/SCSETOP2022/static/media/Card front (sean).661e8a511c6fde2d3fe2.png",
+    "static/media/Card front (bryan).png": "/SCSETOP2022/static/media/Card front (bryan).5b7588d50eeff5ff5ee2.png",
+    "static/media/Card front (teresa).png": "/SCSETOP2022/static/media/Card front (teresa).421b45a9a7ecac5a11d6.png",
     "static/media/CardBack.svg": "/SCSETOP2022/static/media/CardBack.fdba8731175085ae97efd2337409914f.svg",
     "static/media/cardback.svg": "/SCSETOP2022/static/media/cardback.e354571fa6f15994636f5e4553fc0dd5.svg",
     "static/media/KS.svg": "/SCSETOP2022/static/media/KS.a565814f262847966a794455f6f5feae.svg",
@@ -70,12 +74,12 @@
     "static/media/AD.svg": "/SCSETOP2022/static/media/AD.1c2a73dbfed6130412ea4cf2bbd00e8d.svg",
     "index.html": "/SCSETOP2022/index.html",
     "static/media/hamburgerMenu.svg": "/SCSETOP2022/static/media/hamburgerMenu.43b89391bbabf5ed6a31ff82d5822bdc.svg",
-    "main.22b61ec5.css.map": "/SCSETOP2022/static/css/main.22b61ec5.css.map",
-    "main.21a044ce.js.map": "/SCSETOP2022/static/js/main.21a044ce.js.map",
+    "main.2344600f.css.map": "/SCSETOP2022/static/css/main.2344600f.css.map",
+    "main.2954563a.js.map": "/SCSETOP2022/static/js/main.2954563a.js.map",
     "787.fed5ecff.chunk.js.map": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b61ec5.css",
-    "static/js/main.21a044ce.js"
+    "static/css/main.2344600f.css",
+    "static/js/main.2954563a.js"
   ]
 }
