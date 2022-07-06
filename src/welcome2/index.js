@@ -53,7 +53,7 @@ const Welcome = () => {
 
   return (
     <div class="welcomeMain"
-      id="asdf"
+      id="about"
       style={{display:"flex", flexDirection:"column", alignItems:"center", zIndex:0}}>
       
       <div class="allText">

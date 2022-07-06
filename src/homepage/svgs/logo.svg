@@ -43,7 +43,7 @@
 
     .logo {
         filter: drop-shadow(0px 0px 5px #E8E8E8);
-        animation: animate 5s ease-in-out infinite alternate;
+        animation: animate 10s ease-in-out infinite alternate;
     }
       .scsetop {
         <!-- text-shadow: 0 0 5px #ff7bac, 0 0 10px #ff7bac, 0 0 20px #ff7bac, 0 0 40px #ff7bac, 0 0 80px #ff7bac, 0 0 100px #ff7bac, 0 0 120px #ff7bac;  -->
@@ -81,8 +81,9 @@
             box-shadow: unset;
         }
     }
+    <!-- prime numbers baby -->
     .b {
-    animation: flicker 6s ease-in-out 7.75s infinite alternate both;
+    animation: flicker 6s ease-in-out 7s infinite alternate both;
     }
 
     <!-- .o {
@@ -92,26 +93,26 @@
     animation: flicker 6s ease-in-out 7.41s infinite alternate both;
     }-->
     .d1 {
-    animation: flicker 6s ease-in-out 8.94s infinite alternate both;
+    animation: flicker 6s ease-in-out 13s infinite alternate both;
     }
     <!--
     .e {
     animation: flicker 6s ease-in-out 4.47s infinite alternate both;
     } -->
     .r2 {
-    animation: flicker 6s ease-in-out 6.6s infinite alternate both;
+    animation: flicker 6s ease-in-out 19s infinite alternate both;
     }
     .l {
-    animation: flicker 6s ease-in-out 3.81s infinite alternate both;
+    animation: flicker 6s ease-in-out 29s infinite alternate both;
     }
     .a {
-    animation: flicker 6s ease-in-out 6.39s infinite alternate both;
+    animation: flicker 6s ease-in-out 23s infinite alternate both;
     }
     .n {
-    animation: flicker 6s ease-in-out 74.76s infinite alternate both;
+    animation: flicker 6s ease-in-out 17s infinite alternate both;
     }
     .d2 {
-    animation: flicker 6s ease-in-out 12.75s infinite alternate both;
+    animation: flicker 6s ease-in-out 11s infinite alternate both;
     }
 
   </style>

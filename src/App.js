@@ -6,13 +6,14 @@ import GalleryApp from "./gallery";
 import Committee from "./committee";
 import Top5 from "./top5";
 import Gallery from "./gallery2";
+import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Photos from "./photos";
 import Committee2 from "./committe2";
-
 function Home() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       <HomePage></HomePage>
       <Welcome></Welcome>
       <Gallery></Gallery>
@@ -26,7 +27,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/photos" element={<Photos />} />
       </Routes>
     </BrowserRouter>

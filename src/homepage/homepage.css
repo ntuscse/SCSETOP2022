@@ -119,57 +119,6 @@ svg {
     text-align: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-color: black;
-    overflow: hidden;
-    z-index: 10;
-    padding: 0 20%;
-    height: 50.67px;
-    align-items: center;
-}
-
-.navbar a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 60px;
-    text-decoration: none;
-    font-size: 17px;
-    transition-duration: 0.2s;
-}
-
-.dropdown {
-    background-color: black;
-    position: absolute;
-    display: block;
-    top: 50px;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-}
-
-.link {
-    position: relative;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: white;
-}
-
-.navbar a:hover {
-    background-color: #1A1A1A;
-}
-
-.navbar-center {
-    align-self: center;
-    display: inline;
-}
-
-.navbar .hamburger-menu {
-    display: none;
-}
 
 #background-gradient {
     background-image: linear-gradient(#335A60, #738883);
@@ -208,8 +157,9 @@ svg {
 @media screen and (max-width: 500px) {
     .logo {width: 130%}
     .register-button {padding: 12.5px 20px; font-size: 15px;}
-    .navbar {padding: 0 2% !important; justify-content: right;}
-    .navbar a {font-size: 12px; padding: 4% 4%;}
+    
+    /* .navbar {padding: 0 2% !important; justify-content: right;}
+    .navbar a {font-size: 12px; padding: 4% 4%;} */
     .container {width: 100%; height: 100%; top: 0; left: 0; overflow: hidden; position: relative;}
     .bg-div {position: relative; width: 100%; height: 100%; display: block;}
     /* .backbg {bottom: 0; width: 900px; transform: translateX(-40%);}
@@ -220,20 +170,19 @@ svg {
     .mobilebackbg {display: block;}
     .wrapper {display: none;}
     .bg-div {background-color: transparent; background-image: linear-gradient(#335A60, #738883);}  
-    .navbar a {display: none;}
+    /* .navbar a {display: none;}
     .navbar a.hamburger-menu {float: right !important; display: block;}
-    .link {position: relative; padding: 10px 10px;}
+    .link {position: relative; padding: 10px 10px;} */
 }
 
 @media screen and (max-width: 500px) {
-    /* .navbar.responsive {position: relative; height: 225px; display: block;} */
-    .navbar.responsive a {float: none !important; display: block !important; text-align: left;}
-    .navbar.responsive a.hamburger-menu {text-align: right !important;}
+    /* .navbar.responsive a {float: none !important; display: block !important; text-align: left;}
+    .navbar.responsive a.hamburger-menu {text-align: right !important;} */
 }
 
 /* Adjustment for landscape tablet screens */
 @media screen and (max-width: 1200px) {
-    .navbar {padding: 0 10%}
+    /* .navbar {padding: 0 10%} */
 }
 
 @media screen and (max-width: 582px) {
@@ -254,8 +203,8 @@ svg {
     /* .bg-div {background-color: transparent; background-image: linear-gradient(#335A60, #738883); } */
     .container {width: 100%; height: 100%; top: 0; left: 0; overflow: hidden; position: relative;}
     .bg-div {position: relative; width: 100%; height: 100%; display: block; background-image: linear-gradient(#335A60, #738883); background-color: black; }
-    .navbar a { padding: 14px 30px; }
-    .navbar { padding: 0; }
+    /* .navbar a { padding: 14px 30px; }
+    .navbar { padding: 0; } */
 }
 
 @media screen and (min-width: 768px) {

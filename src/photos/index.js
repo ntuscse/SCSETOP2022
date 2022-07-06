@@ -1,90 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./photos.css";
 import hamburgerMenu from "../homepage/hamburgerMenu.svg";
-
+import { HashLink as Link } from "react-router-hash-link";
+import Navbar from "../navbar";
 function Photos() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
-  // detect click outside dropdown menu functionality
-  const dropdownRef = useRef();
-  useEffect(() => {
-    console.log("useffect running");
-    const checkIfClickedOutside = (e) => {
-      console.log("check if clicked outside running", e.target);
-      // If the menu is open and the clicked target is not within the menu,
-      // then close the menu
-      if (
-        navbarOpen &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target)
-      ) {
-        setNavbarOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", checkIfClickedOutside);
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
-  }, [navbarOpen]);
-  const openMenu = () => {
-    console.log(navbarOpen);
-    setNavbarOpen((prev) => !prev);
-  };
 
   return (
     <>
-      <div
-        class="dropdown"
-        ref={dropdownRef}
-        style={{ display: navbarOpen ? "block" : "none" }}
-      >
-        <p>
-          <a href="#register" class="link">
-            Register
-          </a>
-        </p>
-        <p>
-          <a href="#about" class="link">
-            About
-          </a>
-        </p>
-        <p>
-          <a href="#gallery" class="link">
-            Gallery
-          </a>
-        </p>
-        <p>
-          <a href="#committee" class="link">
-            Committee
-          </a>
-        </p>
-      </div>
+      <Navbar></Navbar>
       <div>
-        <div class="navbar-center">
-          <div class="navbar">
-            <a onClick={openMenu} class="hamburger-menu">
-              <img src={hamburgerMenu} />
-            </a>
-            <div
-              class="navbar-links"
-              style={{ display: navbarOpen ? "none" : "block" }}
-            >
-              <a href="#register" class="link">
-                Register
-              </a>
-              <a href="#about" class="link">
-                About
-              </a>
-              <a href="#gallery" class="link">
-                Gallery
-              </a>
-              <a href="#committee" class="link">
-                Committee
-              </a>
-            </div>
-          </div>
-        </div>
+
         <div className="header">
           <h1>Photo Gallery</h1>
           <p>Can you spot your GL? Check in here for the latest camp photos!</p>

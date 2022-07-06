@@ -5,7 +5,7 @@ import { SliderData } from './components/SliderData';
 
 const Gallery = () => {
   return (
-    <div className="Gallery">
+    <div id="gallery" className="Gallery">
     <Description />
     <Stack slides={SliderData} />
     </div>

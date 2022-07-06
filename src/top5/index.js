@@ -40,7 +40,7 @@ const Top5 = () => {
   });
 
   return (
-    <div style={styles.container}>
+    <div  id="committee" style={styles.container}>
       <h1 style={styles.title}>Meet the top 5</h1>
       <p>
         Hover over a card, to reveal the honorary member from SCSE TOP 2022

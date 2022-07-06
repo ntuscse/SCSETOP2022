@@ -1,11 +1,12 @@
 import './Description.css';
+import { HashLink as Link } from "react-router-hash-link";
 
 const Description = () => {
     return (
         <>
         <h2 className='photoGalTitle'>Photo Gallery</h2>
         <p className='photoGalDesc'>Bringing TOP members, seniors and freshmen together.&nbsp;
-            <a className='vmLink' href="https://www.freecodecamp.org/">View More</a>  
+            <Link className='vmLink' to="/photos">View More</Link>  
         </p>
         </>
     );

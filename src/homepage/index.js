@@ -13,6 +13,9 @@ import AirshipKOD from './svgs/AirshipKOD.js';
 import AirshipKOC from './svgs/AirshipKOC.js';
 import AirshipQOH2 from './svgs/AirshipQOH2.js';
 import RegisterBtn from './svgs/register.svg';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 const aheight = window.innerHeight - 50.67;
 
 
@@ -45,12 +48,15 @@ const HomePage = () => {
   const laserRef1 = useRef();
   const laserRef2 = useRef();
   const laserRef3 = useRef();
-
   const laserRef4 = useRef();
+  
   const laserRef5 = useRef();
   const laserRef6 = useRef();
-  const laserRefs = [laserRef1, laserRef2, laserRef3, laserRef4,laserRef5, laserRef6];
-  const LS_randomValsDelay = [getRandomValue(1,7), getRandomValue(1,5), getRandomValue(1,12), getRandomValue(1,8), getRandomValue(1,6), getRandomValue(1,12)];
+  const laserRef7 = useRef();
+  const laserRef8 = useRef();
+
+  const laserRefs = [laserRef1, laserRef2, laserRef3, laserRef4,laserRef5, laserRef6, laserRef7, laserRef8];
+  const LS_randomValsDelay = [getRandomValue(1,7), getRandomValue(1,5), getRandomValue(1,12), getRandomValue(1,8), getRandomValue(1,7), getRandomValue(1,5), getRandomValue(1,12), getRandomValue(1,8)];
 
 
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -93,18 +99,32 @@ const HomePage = () => {
       var setLaser = gsap.set(item.current, {
         x: `random(${index * regionWidth}, ${(index + 1) * regionWidth})`,
       });
+      // if even = backgrand = smaller laser, else bigger laser
+      if (index % 2 == 0) {
+        var fromtoLaser = gsap.fromTo(
+          item.current,
+          { height: 0, width: WIDTH> 700 ? 15: 10 },
+          {
+            height: HEIGHT + 300,
+            width: WIDTH > 700 ? 15 : 10,
+            duration: 1,
+          }
+        );
+      }
+      else {
+          var fromtoLaser = gsap.fromTo(
+            item.current,
+            { height: 0, width: WIDTH> 700 ? 21.5 : 16.5 },
+            {
+              height: HEIGHT + 300,
+              width: WIDTH > 700 ? 21.5 : 16.5,
+              duration: 1,
+            }
+          );
+      }
 
-      var fromtoLaser = gsap.fromTo(
-        item.current,
-        { height: 0, width: WIDTH> 700 ? 45 : 10 },
-        {
-          height: HEIGHT + 300,
-          width: WIDTH > 700 ? 45 : 10,
-          duration: 1,
-        }
-      );
       var delay = gsap.to({}, LS_randomValsDelay[index], {});
-      var delay2 = gsap.to({}, 1, {});
+      var delay2 = gsap.to({}, 0.1, {});
 
       var toLaser = gsap.to(item.current, { height: 0, width: 0 });
 
@@ -175,27 +195,27 @@ const HomePage = () => {
 
   return (
     <>
-    <div class="dropdown" ref={dropdownRef} style={{display:navbarOpen ? "block" : "none"}}>
+    {/* <div class="dropdown" ref={dropdownRef} style={{display:navbarOpen ? "block" : "none"}}>
     <p><a href="#register" class="link">Register</a></p>
-    <p><a href="#about" class="link">About</a></p>
+    <p><Link to="#about" class="link">About</Link></p>
     <p><a href="#gallery" class="link">Gallery</a></p>
     <p><a href="#committee" class="link">Committee</a></p>
-    </div>
+    </div> */}
     <div class="storm"></div>
 
     <div class="container" id="gradient">
 
-      <div class="navbar-center">
+      {/* <div class="navbar-center">
         <div class="navbar">
           <a onClick={openMenu} class="hamburger-menu"><img src={hamburgerMenu} /></a>
           <div class="navbar-links" style={{display:navbarOpen ? "none" : "block"}}>
             <a href="#register" class="link">Register</a>
-            <a href="#about" class="link">About</a>
+            <Link to="#about" class="link">About</Link>
             <a href="#gallery" class="link">Gallery</a>
             <a href="#committee" class="link">Committee</a>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <div class="bg-div">
 
@@ -207,6 +227,20 @@ const HomePage = () => {
           </div>
         </div>
         <svg style={{height:aheight, width:"100%"}} class="wrapper" id="background-gradient">
+
+        <svg
+                width={WIDTH}
+                height={HEIGHT}
+                viewBox={`0 0 ${WIDTH + 250 * ASPECT} ${HEIGHT + 250}`}
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* <Laser class="zzz" ref={laserRef1} x={500} height={0} /> */}
+                <Laser class="zzz" ref={laserRef1} x={500} height={0} />
+                <Laser class="zzz" ref={laserRef3} x={500} height={0} />
+
+              </svg>
+
           <BackBg></BackBg>
           <svg
                 width={WIDTH}
@@ -215,9 +249,8 @@ const HomePage = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <Laser class="zzz" ref={laserRef1} x={500} height={0} />
                 <Laser class="zzz" ref={laserRef2} x={500} height={0} />
-                <Laser class="zzz" ref={laserRef3} x={500} height={0} />
+                <Laser class="zzz" ref={laserRef4} x={500} height={0} />
 
                 <AirshipKOS ref={airshipRef1} x="scale(0.8) translate(-400,10)" />
                 <AirshipQOH2 ref={airshipRef2} x="scale(0.8) translate(-200,250)" />
@@ -228,7 +261,22 @@ const HomePage = () => {
           <FrontBg></FrontBg>
         </svg>
 
+        {/* mobile part  */}
+        <svg class ="mobile-wrapper" style={{height:aheight, width:"100%", position: "absolute", zIndex: "0"}} >
+            <svg
+                width={WIDTH}
+                height={HEIGHT}
+                viewBox={`0 0 ${WIDTH + 250 * ASPECT} ${HEIGHT + 250}`}
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <Laser class="zzz" ref={laserRef5} x={0} height={0} />
+                <Laser class="zzz" ref={laserRef7} x={120} height={0} />
+
+              </svg>
+        </svg>
         <MobileBackBg></MobileBackBg>
+
         <svg style={{height:aheight, width:"100%"}} class="mobile-wrapper">
             <svg
                 width={WIDTH}
@@ -237,9 +285,8 @@ const HomePage = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <Laser class="zzz" ref={laserRef4} x={0} height={0} />
-                <Laser class="zzz" ref={laserRef5} x={120} height={0} />
-                <Laser class="zzz" ref={laserRef6} x={300} height={0} />
+                <Laser class="zzz" ref={laserRef6} x={0} height={0} />
+                <Laser class="zzz" ref={laserRef8} x={120} height={0} />
 
                 <AirshipKOS ref={airshipRef5} x="scale(0.6) translate(-80,10)" />
                 <AirshipQOH2 ref={airshipRef6} x="scale(0.6) translate(-50,250)" />
