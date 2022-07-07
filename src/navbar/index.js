@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div>
         <div class="dropdown" ref={dropdownRef} style={{ display: navbarOpen ? "block" : "none" }}>
-        <p><Link to="/#register" class="link" smooth>Register</Link></p>
+        <p><a href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" class="link" target="_blank">Register</a></p>
         <p><Link to="/#about" class="link" smooth>About</Link></p>
         <p><Link to="/#gallery" class="link" smooth>Gallery</Link></p>
         <p><Link to="/#committee" class="link" smooth>Committee</Link></p>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div class="navbar">
         <a onClick={openMenu} class="hamburger-menu"><img src={hamburgerMenu} /></a>
         <div class="navbar-links" style={{ display: navbarOpen ? "none" : "block" }}>
-            <Link to="/#register" class="link" smooth>Register</Link>
+        <a href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" class="link" target="_blank">Register</a>
             <Link to="/#about" class="link" smooth>About</Link>
             <Link to="/#gallery" class="link" smooth>Gallery</Link>
             <Link to="/#committee" class="link">Committee</Link>

@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    height: 55vw;
+    height: 65vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +56,13 @@
     z-index: 10;
     cursor: pointer;
     user-select: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .slider {
+      height: 55vw;
+    }
+  
   }
   
   @media screen and (min-width: 992px){

@@ -115,14 +115,20 @@ iframe{
     bottom: 0;
 }
 @media screen and (max-width: 500px) {
-
+    .allText {
+        font-size: 14px;
+    }
     .headText{
         margin: 50px 0% 50px 0%;
     
     }
     
     .bodyPara{
-        margin: 50px 0% 50px 0%;
+        margin: 15px 0% 15px 0%;
+    }
+
+    #text6 {
+        font-size: 16px;
     }
     
 }

@@ -63,9 +63,10 @@ const Welcome = () => {
           text={headText}
         />
 
-        {bodyTexts.map((body) => {
+        {bodyTexts.map((body, index) => {
           return (
             <BodyPara
+              id={"text"+index}
               style={{ transform: `translateY(${offsetY * 0}px)` }}
               text={body}
             />

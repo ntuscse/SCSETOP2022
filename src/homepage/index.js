@@ -222,7 +222,7 @@ const HomePage = () => {
         <div class="logo-div">
           <Logo></Logo>
           <div class="button">
-            <a href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank"><img class="register" src={RegisterBtn}></img></a>
+            <a href="https://www.ntu.edu.sg/orientation/school-orientation/scse" target="_blank"><img class="register" src={RegisterBtn}></img></a>
             {/* <a type="button" class="register-button" href="https://wis.ntu.edu.sg/pls/webexe88/REGISTER_NTU.REGISTER?EVENT_ID=OA22052709333861" target="_blank">Register</a> */}
           </div>
         </div>
