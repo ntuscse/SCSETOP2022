@@ -11,6 +11,7 @@ const Navbar = () => {
     const dropdownRef = useRef();
     useEffect(() => {
       console.log("useffect running");
+      
       const checkIfClickedOutside = (e) => {
         console.log("check if clicked outside running", e.target);
         // If the menu is open and the clicked target is not within the menu,
@@ -23,6 +24,15 @@ const Navbar = () => {
           setNavbarOpen(false);
         }
       };
+
+      const easterEgg = (e) => {
+        if (e.key === "F3") {
+          e.stopImmediatePropagation();
+          alert("♦♣♥♠Welcome to Developer Land♠♥♣♦\n\n♥Credits♥\n\nDeveloped by Chiraag, Samuel, Ranjan, Greg, Guo Yong, Brandon\nSpecial thanks to Daniel and the PNP Team for the incredible design!\nWe would like to thank the TOP 5 for this opportunity and especially Sean for his solid advices!")
+        }
+      }
+      document.addEventListener("keydown", easterEgg);
+
       document.addEventListener("mousedown", checkIfClickedOutside);
       return () => {
         // Cleanup the event listener

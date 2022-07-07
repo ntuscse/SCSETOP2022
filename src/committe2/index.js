@@ -45,8 +45,8 @@ function Committee2() {
           { path: "/CommitteePics/proggiescp5_mask.jpg", text: "Proggies" },
         ]}
         col2Pics={[
-          { path: "/CommitteePics/proggiescp2_mask.jpg", text: "Proggeis" },
-          { path: "/CommitteePics/proggiescp6_nomask.jpg", text: "Proggeis" },
+          { path: "/CommitteePics/proggiescp2_mask.jpg", text: "Proggies" },
+          { path: "/CommitteePics/proggiescp6_nomask.jpg", text: "Proggies" },
         ]}
         col3Pics={[
           { path: "/CommitteePics/proggiescp3_nomask.jpg", text: "Proggies" },
