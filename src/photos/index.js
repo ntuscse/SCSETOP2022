@@ -5,12 +5,10 @@ import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../navbar";
 
 function Photos() {
-
   return (
     <>
       <Navbar></Navbar>
       <div>
-
         <div className="header">
           <h1>Photo Gallery</h1>
           <p>Can you spot your GL? Check in here for the latest camp photos!</p>
@@ -135,22 +133,22 @@ function Photos() {
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc1.jpg"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc1.JPG"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc2.jpg"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc2.JPG"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc3.jpg"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc3.JPG"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc4.jpg"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc4.JPG"}
               style={{ width: "100%" }}
             />
           </div>
