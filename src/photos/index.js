@@ -3,6 +3,7 @@ import "./photos.css";
 import hamburgerMenu from "../homepage/hamburgerMenu.svg";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../navbar";
+
 function Photos() {
 
   return (
@@ -134,22 +135,22 @@ function Photos() {
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc1.JPG"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc1.jpg"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc2.JPG"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc2.jpg"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc3.JPG"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc3.jpg"}
               style={{ width: "100%" }}
             />
             <img
               alt="pompu"
-              src={process.env.PUBLIC_URL + "/OldCamp/oc4.JPG"}
+              src={process.env.PUBLIC_URL + "/OldCamp/oc4.jpg"}
               style={{ width: "100%" }}
             />
           </div>
