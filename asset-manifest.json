@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SCSETOP2022/static/css/main.5d79a835.css",
-    "main.js": "/SCSETOP2022/static/js/main.edd26f25.js",
+    "main.css": "/SCSETOP2022/static/css/main.9620d7d6.css",
+    "main.js": "/SCSETOP2022/static/js/main.cb9d1427.js",
     "static/js/787.fed5ecff.chunk.js": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js",
     "static/media/Picture.png": "/SCSETOP2022/static/media/Picture.7397d62e13f77e5bdd7c.png",
     "static/media/Card front (boonyen).png": "/SCSETOP2022/static/media/Card front (boonyen).e1d7c7e6d7bd33e75fd6.png",
@@ -69,12 +69,12 @@
     "static/media/AD.svg": "/SCSETOP2022/static/media/AD.1c2a73dbfed6130412ea4cf2bbd00e8d.svg",
     "index.html": "/SCSETOP2022/index.html",
     "static/media/hamburgerMenu.svg": "/SCSETOP2022/static/media/hamburgerMenu.43b89391bbabf5ed6a31ff82d5822bdc.svg",
-    "main.5d79a835.css.map": "/SCSETOP2022/static/css/main.5d79a835.css.map",
-    "main.edd26f25.js.map": "/SCSETOP2022/static/js/main.edd26f25.js.map",
+    "main.9620d7d6.css.map": "/SCSETOP2022/static/css/main.9620d7d6.css.map",
+    "main.cb9d1427.js.map": "/SCSETOP2022/static/js/main.cb9d1427.js.map",
     "787.fed5ecff.chunk.js.map": "/SCSETOP2022/static/js/787.fed5ecff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d79a835.css",
-    "static/js/main.edd26f25.js"
+    "static/css/main.9620d7d6.css",
+    "static/js/main.cb9d1427.js"
   ]
 }
