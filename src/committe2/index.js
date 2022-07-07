@@ -64,7 +64,7 @@ function Committee2() {
         col1Pics={[{ path: "/CommitteePics/tech_mask.jpg", text: "Tech" }]}
         col2Pics={[{ path: "/CommitteePics/logs1_nomask.jpg", text: "Logs" }]}
         col3Pics={[{ path: "/CommitteePics/logs2_nomask.jpg", text: "Logs" }]}
-        col4Pics={[{ path: "/CommitteePics/TOP5.JPG", text: "Top 5" }]}
+        col4Pics={[{ path: "/CommitteePics/TOP5.jpg", text: "Top 5" }]}
       />
     </div>
   );
