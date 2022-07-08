@@ -9,7 +9,7 @@ function NewCard({ image }) {
         <div className="flip-card-front">
           <img
             src={cardback}
-            style={{ height: "400px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             alt="Avatar"
             className="cardPic"
           />
@@ -17,7 +17,7 @@ function NewCard({ image }) {
         <div className="flip-card-back">
           <img
             src={image}
-            style={{ height: "400px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             alt="Avatar"
           />
         </div>
