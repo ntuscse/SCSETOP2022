@@ -2,7 +2,7 @@ import React from 'react'
 import './faq.css'
 import { useState } from 'react';
 import Navbar from "../navbar";
-
+import babyshark from "./babyshark.mp3";
 
 const FAQ = () => {
     const [selected, setSelected] = useState(null)
@@ -47,7 +47,12 @@ const FAQ = () => {
         {
             question: 'Can I make changes to my T-shirt size?',
             answer: 'Yes, you may. Do inform your GLs about the change, we will try our best to fulfill your request.'
-        }
+        },
+        {
+            question: 'Why is there no beach day?',
+            answer: '',
+            shark: 'yes'
+        }   
         
     ]
     
@@ -61,15 +66,20 @@ const FAQ = () => {
         </div>
         <div className='accordion'>
             {data.map((item, i) => (
-                <div className={selected == i ? 'item expanded' : 'item'}>
+                <div key={i} className={selected == i ? 'item expanded' : 'item'}>
                     <div className='title' onClick={()=> toggle(i)}>
                         <h3>{item.question}</h3>
                         <span className={selected == i ? 'label expanded' : 'label'}>
                             <svg class="arrowsvg" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
                         </span>
                     </div>
-                    <div className={selected == i ? 'content show' : 'content'}>
+                    <div className={selected == i ? 'content expanded' : 'content'}>
                         {item.answer}
+                        <div className={item.shark == 'yes' ? 'show' : 'none'}>
+
+                        <audio controls autoplay id="audioID" loop> <source src={babyshark}  type="audio/mp3"/> 
+                        </audio>
+                        </div>
                     </div>
                 </div>
             ))}
