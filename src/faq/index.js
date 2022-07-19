@@ -19,11 +19,11 @@ const FAQ = () => {
     const data = [
         {
             question: 'If I am taking a Double Degree, which orientation programme should I go for?',
-            answer: 'Since you are in a double degree programme, you effectively belong to 2 faculties. You may choose which orientation you want to go for. Or you may choose to attend half of each orientation. How you would like to arrange your time is entirely up to yo'
+            answer: 'Since you are in a double degree programme, you effectively belong to 2 faculties. You may choose which orientation you want to go for. Or you may choose to attend half of each orientation. How you would like to arrange your time is entirely up to you.'
         },
         {
             question: 'What are the activities happening on the orientation days? / May I take a look at the orientation programme?',
-            answer: 'We will be releasing the orientation schedule closer to the dates of orientation on our very own SCSE TOP website. Do keep a lookout for that. Your Chief Group Leaders (CGLs) will also be releasing it to you once the Orientation Groups (OGs) are confirmed. '
+            answer: 'We will be releasing the orientation schedule closer to the dates of orientation on our very own SCSE TOP website. Do keep a lookout for that. Your Chief Group Leaders (CGLs) will also be releasing it to you once the Orientation Groups (OGs) are confirmed.'
         },
         {
             question: 'Is the camp overnight?',
@@ -45,8 +45,8 @@ const FAQ = () => {
             answer: 'Be sure to inform your CGL/GLs about your availability so that they can account for you on the actual days of TOP.'
         },
         {
-            question: 'Can I make changes to my Tshirt size?',
-            answer: 'Yes, you may. Do inform your GLs about the change, we will try our best to fulfil your request.'
+            question: 'Can I make changes to my T-shirt size?',
+            answer: 'Yes, you may. Do inform your GLs about the change, we will try our best to fulfill your request.'
         }
         
     ]
