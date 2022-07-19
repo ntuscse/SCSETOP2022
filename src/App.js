@@ -10,6 +10,8 @@ import Navbar from "./navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Photos from "./photos";
 import Committee2 from "./committe2";
+import FAQ from "./faq";
+
 function Home() {
   return (
     <div className="App">
@@ -27,9 +29,9 @@ function App() {
   return (
     <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Routes>
-        
         <Route path="/" element={<Home />} />
         <Route path="/photos" element={<Photos />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

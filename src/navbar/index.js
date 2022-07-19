@@ -53,6 +53,8 @@ const Navbar = () => {
         <p><Link to="/#about" class="link" smooth>About</Link></p>
         <p><Link to="/#gallery" class="link" smooth>Gallery</Link></p>
         <p><Link to="/#committee" class="link" smooth>Committee</Link></p>
+        <p><Link to="/faq" class="link" smooth>FAQ</Link></p>
+
      </div>
     <div class="navbar-center">
         <div class="navbar">
@@ -62,6 +64,8 @@ const Navbar = () => {
             <Link to="/#about" class="link" smooth>About</Link>
             <Link to="/#gallery" class="link" smooth>Gallery</Link>
             <Link to="/#committee" class="link">Committee</Link>
+            <Link to="/faq" class="link" smooth>FAQ</Link>
+
         </div>
         </div>
     </div>
