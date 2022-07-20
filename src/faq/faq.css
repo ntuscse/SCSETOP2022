@@ -43,7 +43,7 @@
 }
 
 .content {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "RobotoMono", Arial, Helvetica, sans-serif;
     font-size: 18px;
     white-space: pre-wrap;
     color:black;
@@ -87,3 +87,10 @@
         font-size: 18px;
     }
 }
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(../fonts/RobotoMono-Regular.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
